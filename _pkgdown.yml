@@ -1,0 +1,29 @@
+title: Modélisation statistique
+
+url: https://lbelzile.github.io/modstat
+
+template:
+  params:
+    bootswatch: flatly
+    noindex: true
+    
+navbar:
+  title:
+  type: default
+  left:
+  - text: Recueil
+    href: https://lbelzile.github.io/math60604
+  - text: Contenu
+    href: articles/contenu.html
+  - text: Plan de cours
+    href: articles/plandecours.html
+  - text: Contributeurs
+    href: articles/equipe.html
+  right:
+  - icon: fa-github
+    href: https://github.com/lbelzile/modstat
+
+
+authors:
+  Léo Belzile:
+    href: https://lbelzile.bitbucket.io
