@@ -1,4 +1,4 @@
-## Contenu
+## Descriptif du cours
 
 L’objectif est de fournir aux étudiants les bases de l’inférence statistique ainsi que les outils de modélisation dans un contexte de régression. Ce cours aborde notamment les modèles linéaires, les modèles linéaires généralisés et la régression pour données longitudinales avec effets aléatoires et structures de corrélation. Pour chacune de ces méthodes, les principes théoriques de l’inférence, tels que les tests d’hypothèse, statistiques de tests et méthodes d’estimation seront abordés avec rigueur. Une atiention particulière sera aussi portée aux applications en gestion à l’aide du logiciel **SAS**.
 

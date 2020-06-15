@@ -11,10 +11,10 @@ navbar:
   title:
   type: default
   left:
+  - text: Matériel pédagogique
+    href: articles/contenu.html
   - text: Recueil
     href: https://lbelzile.github.io/math60604
-  - text: Contenu
-    href: articles/contenu.html
   - text: Plan de cours
     href: articles/plandecours.html
   - text: Contributeurs

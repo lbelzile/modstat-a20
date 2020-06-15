@@ -1,16 +1,14 @@
 ---
-title: "Contenu"
+title: "Matériel pédagogique"
 output: rmarkdown::html_vignette
 toc:
   depth: 2
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-  %\VignetteIndexEntry{Contenu}
+  %\VignetteIndexEntry{Matériel pédagogique}
 ---
 
-
-## Matériel pédagogique
 
 Le contenu du cours est divisé en chapitres: des notes de cours, du code, des questions à choix multiples et des exercices sont disponibles pour chaque sujet.
 
