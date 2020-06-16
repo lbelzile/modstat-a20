@@ -12,13 +12,13 @@ vignette: >
 
 Le contenu du cours est divisé en chapitres: des notes de cours, du code, des questions à choix multiples et des exercices sont disponibles pour chaque sujet.
 
-- [Bases de l'inférence statistique](https://lbelzile.github.io/math60604/intro/)
-- [Régression linéaire](https://lbelzile.github.io/math60604/regression-lineaire/)
-- [Modèles linéaires généralisés](https://lbelzile.github.io/math60604/modeles-lineaires-generalises/)
-- [Données corrélées et longitudinales](https://lbelzile.github.io/math60604/donnes-correlees-longitudinales/)
-- [Modèles linéaires mixtes](https://lbelzile.github.io/math60604/modeles-lineaires-mixtes/)
-- [Analyse de survie](https://lbelzile.github.io/math60604/survie/)
-- [Vraisemblance](https://lbelzile.github.io/math60604/vraisemblance/)
+- [Bases de l'inférence statistique](https://lbelzile.github.io/math60604/intro.html)
+- [Régression linéaire](https://lbelzile.github.io/math60604/regression-lineaire.html)
+- [Modèles linéaires généralisés](https://lbelzile.github.io/math60604/modeles-lineaires-generalises.html)
+- [Données corrélées et longitudinales](https://lbelzile.github.io/math60604/donnees-correlees-longitudinales.html)
+- [Modèles linéaires mixtes](https://lbelzile.github.io/math60604/modeles-lineaires-mixtes.html)
+- [Analyse de survie](https://lbelzile.github.io/math60604/survie.html)
+- [Vraisemblance](https://lbelzile.github.io/math60604/vraisemblance.html)
 
 ---
 
