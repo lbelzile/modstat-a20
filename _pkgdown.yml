@@ -16,7 +16,7 @@ navbar:
   - text: Recueil
     href: https://lbelzile.github.io/math60604
   - text: Plan de cours
-    href: articles/plandecours.html
+    href: ../syllabus/MATH60604-A20-Syllabus.pdf
   - text: Contributeurs
     href: articles/equipe.html
   right:
