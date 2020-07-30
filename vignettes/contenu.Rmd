@@ -51,6 +51,5 @@ kable(subset(cddat, select = c("Topic", "Demo", "R", "SAS")), row.names = FALSE)
 
 ```{r, echo=FALSE, eval=FALSE, message=FALSE}
 source("get_exercise_data.R")
-
 kable(exdat, row.names = FALSE)
 ```

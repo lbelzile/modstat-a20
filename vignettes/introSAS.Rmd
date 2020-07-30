@@ -1,0 +1,29 @@
+---
+title: "Introduction à SAS"
+output: rmarkdown::html_vignette
+toc:
+  depth: 2
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{Introduction à SAS}
+---
+
+## Logiciel et Installation
+
+La licence institutionnelle du logiciel **SAS** offert par les TIs est gratuite, mais ces derniers vous font payer le téléchargement. Vous pouvez partager cette dernière avec vos camarades. Si vous avez déjà acheté le logiciel par le passé, vous avez droit aux mises à jour gratuites. Le logiciel est disponible tant que vous êtes étudiant(e)s à HEC.
+
+Je vous recommande plutôt d'installer [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), qui est gratuit. Vous accédez au logiciel depuis un navigateur web et la langue de ce dernier détermine celle de **SAS UE**. Si vous avez un Mac, utiliser ce dernier vous évitera d'installer Windows 10 sur une machine virtuelle (solution broche à foin s'il en est une).
+
+Nous utiliserons uniquement les modules SAS/BASE et SAS/STAT.
+
+## Introduction à **SAS**
+
+
+- [Capsule vidéo](https://hecmontreal.yuja.com/V/Video?v=87013&node=440149&a=311352596&autoplay=1)
+- [Diapositives](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.pdf)
+- [Code](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.sas)
+- [Exercices](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SASexercices.pdf)
+- [Exercices (code SAS)](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SASexercices.sas)
+- [Jeux de données (zip)](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/Intro_SAS_data.zip)
+
