@@ -26,30 +26,18 @@ Le contenu du cours est divisé en chapitres: des notes de cours, du code, des q
 
 ## Vidéos et diapositives
 
-Cette section contient des liens vers les vidéos et les diapositives utilisées dans ces dernières.
+Cette section contient des liens vers les vidéos ainsi que le code et les diapositives utilisés dans ces dernières.
 
-```{r, echo=FALSE, eval=FALSE, message=FALSE}
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_slide_data.R")
-library("knitr")
 
-kable(subset(sldat, select = c("Lesson", "Description", "Topic", "YouTube", "PDF")), 
-    row.names = FALSE)
+knitr::kable(sldat)
 ```
 
-
-## Code
-
-Vous pouvez rouler les extraits de code suivant sur votre ordinateur personnel.
-
-```{r, echo=FALSE, eval=FALSE, message=FALSE}
-source("get_demo_data.R")
-
-kable(subset(cddat, select = c("Topic", "Demo", "R", "SAS")), row.names = FALSE)
-```
 
 ## Exercices
 
-```{r, echo=FALSE, eval=FALSE, message=FALSE}
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_exercise_data.R")
-kable(exdat, row.names = FALSE)
+knitr::kable(exdat, row.names = FALSE)
 ```
