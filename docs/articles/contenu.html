@@ -218,12 +218,12 @@
 <a href="#donn%C3%A9es" class="anchor"></a>Données</h2>
 <p>Les jeux de données (en format <code>.sas7bdat</code>) sont disponibles pour <a href="https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip">téléchargement en cliquant sur ce lien</a>.</p>
 <p>Vous pouvez également accéder aux bases de données dans <strong>R</strong> en installant le paquetage <strong>R</strong> <code>hecmodstat</code></p>
-<p>Vous pouvez installer le paquetage à partir de Github à l’aide des commandes suivantes après avoir installé <code>remotes</code>:</p>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"learnr"</span>,<span class="st">"remotes"</span>))
+<p>Vous pouvez installer le paquetage à partir de Github à l’aide des commandes suivantes (décommentez la première ligne pour installer les bibliothèques <code>learnr</code> et <code>remotes</code>):</p>
+<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co">#install.packages(c("learnr","remotes"))</span>
 <span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecmodstat"</span>)</pre></body></html></div>
-<p>Pour ouvrir le quiz dans votre navigateur, utilisez la commande suivante:</p>
+<p>Pour ouvrir un quiz dans votre navigateur, utilisez par exemple la commande suivante:</p>
 <div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"intro"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecmodstat"</span>)</pre></body></html></div>
-<p>pour le tutoriel <code>intro</code>.</p>
+<p>pour ouvrir le tutoriel <code>intro</code> dans un navigateur web.</p>
 </div>
   </div>
 

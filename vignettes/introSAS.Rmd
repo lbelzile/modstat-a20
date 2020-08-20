@@ -16,7 +16,7 @@ Après avoir créé un compte utilisateur, suivez ces étapes:
 
 - Inscrivez vous sur le centre de contrôle (*Control Center*) à https://odamid.oda.sas.com.
 - Choisir l'option *Enroll in a course* dans la section *Enrollments* en bas de la page: cliquez sur le lien.
-- Inscrivez le code du cours: 50a343b3-1e64-47e1-99f6-b4fd666fd0be.
+- Inscrivez le code du cours: `50a343b3-1e64-47e1-99f6-b4fd666fd0be`.
 - Soumettez le formulaire.
 - Confirmez le choix du cours et terminez l'inscription pour Studio
 
@@ -33,7 +33,7 @@ Pour accéder aux données du cours, utilisez l'énoncé:
 | Nom du cours: |	MATH 60604|
 |Niveau:| Graduate |
 |Institution:|	HEC Montreal|
-| Code du cours: |	50a343b3-1e64-47e1-99f6-b4fd666fd0be|
+| Code du cours: |	`50a343b3-1e64-47e1-99f6-b4fd666fd0be`|
 |Description:|	Modélisation statistique|
 
 

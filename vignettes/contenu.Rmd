@@ -46,16 +46,15 @@ Les jeux de données (en format `.sas7bdat`) sont disponibles pour [télécharge
 
 Vous pouvez également accéder aux bases de données dans **R** en installant le paquetage **R** `hecmodstat`
 
-Vous pouvez installer le paquetage à partir de Github à l'aide des commandes suivantes après avoir installé `remotes`:
+Vous pouvez installer le paquetage à partir de Github à l'aide des commandes suivantes (décommentez la première ligne pour installer les bibliothèques `learnr` et `remotes`):
 ```{r, eval = FALSE}
-install.packages(c("learnr","remotes"))
+#install.packages(c("learnr","remotes"))
 remotes::install_github("lbelzile/hecmodstat")
 ```
 
-Pour ouvrir le quiz dans votre navigateur, utilisez la commande suivante:
-
+Pour ouvrir un quiz dans votre navigateur, utilisez par exemple la commande suivante:
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecmodstat")
 ```
-pour le tutoriel `intro`.
+pour ouvrir le tutoriel `intro` dans un navigateur web.
 
