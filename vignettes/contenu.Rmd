@@ -22,8 +22,6 @@ Le contenu du cours est divisé en chapitres: des notes de cours, du code, des q
 
 ---
 
-
-
 ## Vidéos et diapositives
 
 Cette section contient des liens vers les vidéos ainsi que le code et les diapositives utilisés dans ces dernières.
@@ -41,3 +39,23 @@ knitr::kable(sldat)
 source("get_exercise_data.R")
 knitr::kable(exdat, row.names = FALSE)
 ```
+
+## Données
+
+Les jeux de données (en format `.sas7bdat`) sont disponibles pour [téléchargement en cliquant sur ce lien](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip).
+
+Vous pouvez également accéder aux bases de données dans **R** en installant le paquetage **R** `hecmodstat`
+
+Vous pouvez installer le paquetage à partir de Github à l'aide des commandes suivantes après avoir installé `remotes`:
+```{r, eval = FALSE}
+install.packages(c("learnr","remotes"))
+remotes::install_github("lbelzile/hecmodstat")
+```
+
+Pour ouvrir le quiz dans votre navigateur, utilisez la commande suivante:
+
+```{r eval = FALSE}
+learnr::run_tutorial("intro", package = "hecmodstat")
+```
+pour le tutoriel `intro`.
+

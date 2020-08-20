@@ -8,19 +8,51 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Introduction à SAS}
 ---
+## SAS onDemand for Academics: Studio
+
+Inscrivez-vous sur *SAS OnDemand for Academics* et créez un compte sur https://odamid.oda.sas.com en sélectionnant l'option *Register for an account*.
+
+Après avoir créé un compte utilisateur, suivez ces étapes:
+
+- Inscrivez vous sur le centre de contrôle (*Control Center*) à https://odamid.oda.sas.com.
+- Choisir l'option *Enroll in a course* dans la section *Enrollments* en bas de la page: cliquez sur le lien.
+- Inscrivez le code du cours: 50a343b3-1e64-47e1-99f6-b4fd666fd0be.
+- Soumettez le formulaire.
+- Confirmez le choix du cours et terminez l'inscription pour Studio
+
+Pour accéder aux données du cours, utilisez l'énoncé:
+
+`LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;`
+
+
+
+### SAS® OnDemand for Academics
+
+| Détails sur le cours | |
+|:----|:----|
+| Nom du cours: |	MATH 60604|
+|Niveau:| Graduate |
+|Institution:|	HEC Montreal|
+| Code du cours: |	50a343b3-1e64-47e1-99f6-b4fd666fd0be|
+|Description:|	Modélisation statistique|
+
 
 ## Logiciel et Installation
 
+
+Nous utiliserons uniquement les modules SAS/BASE et SAS/STAT. Si vous désirez installer **SAS** sur votre ordinateur plutôt que d'utiliser la version serveur, deux options s'offrent à vous.
+
+
+Je vous recommande d'installer [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), qui est gratuit. Vous accédez au logiciel depuis un navigateur web et la langue de ce dernier détermine celle de **SAS UE**. Si vous avez un Mac, utiliser ce dernier vous évitera d'installer Windows 10 sur une machine virtuelle (solution broche à foin s'il en est une). Notez que ce logiciel est discontinué et ne sera plus disponible à partir de juillet 2021.
+
 La licence institutionnelle du logiciel **SAS** offert par les TIs est gratuite, mais ces derniers vous font payer le téléchargement. Vous pouvez partager cette dernière avec vos camarades. Si vous avez déjà acheté le logiciel par le passé, vous avez droit aux mises à jour gratuites. Le logiciel est disponible tant que vous êtes étudiant(e)s à HEC.
 
-Je vous recommande plutôt d'installer [SAS University Edition (**SAS UE**)](https://www.sas.com/en_us/software/university-edition.html), qui est gratuit. Vous accédez au logiciel depuis un navigateur web et la langue de ce dernier détermine celle de **SAS UE**. Si vous avez un Mac, utiliser ce dernier vous évitera d'installer Windows 10 sur une machine virtuelle (solution broche à foin s'il en est une).
 
-Nous utiliserons uniquement les modules SAS/BASE et SAS/STAT.
 
 ## Introduction à **SAS**
 
 
-- [Capsule vidéo](https://hecmontreal.yuja.com/V/Video?v=87013&node=440149&a=311352596&autoplay=1)
+- [Capsule vidéo (mot de passe: sas)](https://hecmontreal.yuja.com/V/Video?v=87013&node=440149&a=311352596&autoplay=1)
 - [Diapositives](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.pdf)
 - [Code](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.sas)
 - [Exercices](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SASexercices.pdf)

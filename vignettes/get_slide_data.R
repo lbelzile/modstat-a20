@@ -6,8 +6,13 @@ names <- c("Plan de cours",
            "Théorème central limite",
            "Analyse exploratoire")
 semaine <- as.numeric(substr(slides, 12,12))
-video <- rep("", length(names))
-
+video <- c("https://youtu.be/kC5S4h0bIaw", 
+             "https://youtu.be/6Qe4mi6A9bU", 
+             "https://youtu.be/a2cpzb1EzGk",
+             "https://youtu.be/2vK0zEX6dSA")
+if(length(names) - length(video) > 0){
+  video <- c(video, rep("", length(names) - length(video)))
+}
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
 
 codesas <- list.files(path = codedir, pattern = "*.sas")
@@ -24,6 +29,6 @@ codeRstr[nid+1L] <- paste0("[R](",linkgithub,"code/", codeR,")")
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
 sldat <- data.frame('S' = semaine, 
                     Diapositives = paste0("[",names,"](",url, slides,")"),
-                    Vidéos = video,
+                    Vidéos = paste0("[vidéo](",video,")"),
                     SAS = codestr,
                     R = codeRstr)

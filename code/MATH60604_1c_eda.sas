@@ -30,7 +30,3 @@ xaxis label="durée de trajet (en minutes)";
 yaxis label="prix (en euros)";
 run;
 
-proc ttest data=modstat.distraction side=L;
-paired c*t;
-run;
-
