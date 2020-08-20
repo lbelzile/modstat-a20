@@ -51,6 +51,10 @@ La licence institutionnelle du logiciel **SAS** offert par les TIs est gratuite,
 
 ## Introduction à **SAS**
 
+Si vous accédez à **SAS** onDemand, vous pouvez charger les données à l'aide de 
+```{sas loadintro, eval = FALSE}
+LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
+```
 
 - [Capsule vidéo (mot de passe: sas)](https://hecmontreal.yuja.com/V/Video?v=87013&node=440149&a=311352596&autoplay=1)
 - [Diapositives](https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.pdf)
