@@ -58,3 +58,4 @@ learnr::run_tutorial("intro", package = "hecmodstat")
 ```
 pour ouvrir le tutoriel `intro` dans un navigateur web.
 
+*Note*: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquetage pour bénéficier des dernières fonctionnalités.
