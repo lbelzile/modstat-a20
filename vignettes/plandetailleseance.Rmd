@@ -11,26 +11,30 @@ vignette: >
 
 ## Semaine 1
 
-À la maison avant le cours: 
+### À la maison avant le cours: 
 
 - Capsule vidéos: 0, 1a, 1b, 1c
 - Notes de cours: chapitre 1 et annexe A
 - Créez un compte pour **SAS** onDemand 
 - Complétez l'[Introduction à **SAS**](https://lbelzile.github.io/modstat/articles/introSAS.html)
 
-En classe:
+### En classe:
 
 - Présentation et pratique des outils pédagogique (Zoom / Etherpad / Wooclap / SAS onDemand)
-- [Atelier de visualisation (groupe)](https://github.com/lbelzile/statmod/raw/master/atelier/graphiques/graphics.zip)
+- [Atelier de visualisation (groupe)](https://github.com/lbelzile/modstat/raw/master/atelier/graphiques/graphics.zip)
 - Exercice 1.4 (a) et (b) avec **SAS**
 
 
-Lecture et ressources supplémentaires:
+### Lectures additionnelles:
 
 - [Chapitre 1 de *Data Visualization: A practical introduction* par Kieran Healy](https://socviz.co/lookatdata.html#lookatdata)
-- [Chapitres 3 et 7 de _**R** for Data Science_ par Garrett Grolemund et Hadley Wickham](https://r4ds.had.co.nz/)
-- [*Fundamentals of Data Visualization* par Claus O. Wilke](https://clauswilke.com/dataviz/)
 - [Tests de permutation](https://www.jwilber.me/permutationtest/)
 - [DataViz Cheatsheet](https://policyviz.com/2018/08/07/dataviz-cheatsheet/)
+- [Chapitre 7 de _**R** for Data Science_ par Garrett Grolemund et Hadley Wickham](https://r4ds.had.co.nz/)
+
+### Autres références:
+
+- [Chapitre 3 de _**R** for Data Science_ par Garrett Grolemund et Hadley Wickham](https://r4ds.had.co.nz/)
+- [*Fundamentals of Data Visualization* par Claus O. Wilke](https://clauswilke.com/dataviz/)
 - [Financial Times Visual Vocabulary](	https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
 - [BBC R Cookbook (optionnel)](https://bbc.github.io/rcookbook/)
