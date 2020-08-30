@@ -1,4 +1,5 @@
 slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "*.html")
+slides <- slides[substr(slides, 1, 11) == "MATH60604_d"]
 ns <- length(slides)
 codedir <- "../code"
 names <- c("Plan de cours",
@@ -9,7 +10,8 @@ semaine <- as.numeric(substr(slides, 12,12))
 video <- c("https://youtu.be/kC5S4h0bIaw", 
              "https://youtu.be/6Qe4mi6A9bU", 
              "https://youtu.be/a2cpzb1EzGk",
-             "https://youtu.be/2vK0zEX6dSA")
+             "https://youtu.be/2vK0zEX6dSA"
+           )
 if(length(names) - length(video) > 0){
   video <- c(video, rep("", length(names) - length(video)))
 }

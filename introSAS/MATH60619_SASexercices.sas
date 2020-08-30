@@ -18,12 +18,19 @@
 /* ---------- */
 /* Le jeu de données AAPL est maintenant disponible dans la bibliothèque "multi". */
 
+/* Créer une copie locale pour SAS onDemand*/
+
+
 
 /* Exercice 5 */
 /* ---------- */
 
-  proc sort data=multi.aapl;
-    by  date;
+ data aapl;
+  set multi.aapl;
+ run;
+
+  proc sort data=aapl;
+    by date;
   run;
 
   data aapl2; /* jeu de donnée temporaire créé dans la bibliothèque "work" */

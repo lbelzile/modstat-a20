@@ -13,6 +13,8 @@ navbar:
   left:
   - text: "Matériel pédagogique"
     href: articles/contenu.html
+  - text: "Plan des séances"
+    href: articles/plandetailleseance.html
   - text: Ressources
     menu:
      - text: "Plan de cours"
