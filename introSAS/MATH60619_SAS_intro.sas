@@ -280,6 +280,8 @@ run;
 /* L'utilisation de ODS permet de présenter les résultats de SAS sous une forme plus 
  élégante: par exemple, sous forme de fichier RTF qui peut être édité dans Word. 
  Il est aussi possible de produire des fichiers pdf ou html. */
+ /*Note: ces fonctions ne fonctionnent pas dans SAS onDemand ou SAS UE, vous devez
+ exporter directement le fichier à l'aide de la barre d'outil */
 
 ods rtf;
 
@@ -312,8 +314,8 @@ run;
 *Partie 4 : Graphiques;
 *=====================;
 
-ods graphics on; 
-ods rtf;
+* ods graphics on; 
+* ods rtf;
 
 proc sgplot data=intro_ex1;  /* histogramme de l'âge */
 histogram age;
@@ -327,8 +329,8 @@ proc sgplot data=intro_ex1;  /* diagramme du nombre de visites en fonction de l'
 scatter x=age y=n_visite;
 run;
 
-ods rtf close;
-ods graphics off; 
+* ods rtf close;
+* ods graphics off; 
 
 
 /* Document préparé par Denis Larocque, revisé ensuite par Marc Fredette et Jean-François Plante. */

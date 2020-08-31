@@ -50,11 +50,11 @@
 
 /* Exercice 7 */
 /* ---------- */
-  ods rtf;
+
   proc means data=aapl2 N NMISS MIN MAX RANGE MEAN VAR STD;
     var diff aug aaug adj_aug;
   run;
-  ods rtf close;
+
 
   /* Note: il existe d'autres format pour les sorties 
   (on pourrait remplacer rtf par html ou pdf)*/
@@ -93,16 +93,18 @@ Path:       Means.Summary
 /* Exercice 9 */
 /* ---------- */
 
+/* Pour exporter sur une machine Windows avec SAS de base, 
+décommentez les fonctions suivantes
 ods graphics on; 
 ods rtf;
-
+*/
 proc sgplot data=aapl2;          
 histogram aug;
 run;
-
+/* Idem, décommenter
 ods rtf close;
 ods graphics off; 
-
+*/
 
 
 
