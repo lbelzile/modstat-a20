@@ -52,10 +52,12 @@ Vous pouvez installer le paquetage à partir de Github à l'aide des commandes s
 remotes::install_github("lbelzile/hecmodstat")
 ```
 
+*Note*: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquetage pour bénéficier des dernières fonctionnalités.
+
+## Quiz
+
 Pour ouvrir un quiz dans votre navigateur, utilisez par exemple la commande suivante:
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecmodstat")
 ```
-pour ouvrir le tutoriel `intro` dans un navigateur web.
-
-*Note*: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquetage pour bénéficier des dernières fonctionnalités.
+pour ouvrir par exemple le tutoriel `intro` dans un navigateur web.
