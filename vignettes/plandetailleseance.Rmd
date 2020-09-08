@@ -8,10 +8,28 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
+## Semaine 2
+
+### Avant le cours: 
+
+- Capsules vidéo 2a, 2b (2c optionnelle)
+- Notes de cours: chapitre 2, sections 2.1 à 2.3
+
+### En classe:
+
+- Interprétation des coefficients (données `intention`)
+- Retour sur les données `assurance`
+- Diagrammes de régression partielle
+
+### Après le cours: 
+
+- Exercices 2.1-2.4
+
+---
 
 ## Semaine 1
 
-### À la maison avant le cours: 
+### Avant le cours: 
 
 - Capsule vidéos: 0, 1a, 1b, 1c
 - Notes de cours: chapitre 1 et annexe A
