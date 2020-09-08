@@ -22,7 +22,11 @@ vignette: >
 
 - Présentation et pratique des outils pédagogique (Zoom / Etherpad / Wooclap / SAS onDemand)
 - [Atelier de visualisation (groupe)](https://github.com/lbelzile/modstat/raw/master/atelier/graphiques/graphics.zip)
-- Exercice 1.4 (a) et (b) avec **SAS**
+
+### Après le cours
+
+- Quiz 1 (`intro`)
+- Exercice 1.4 (a) et (b) avec **SAS**. *Note: cette série d'exercices est probablement difficile à l'heure actuelle, mais vous devriez être en mesure de la compléter dans quelques semaines.*
 
 
 ### Lectures additionnelles:
@@ -36,5 +40,6 @@ vignette: >
 
 - [Chapitre 3 de _**R** for Data Science_ par Garrett Grolemund et Hadley Wickham](https://r4ds.had.co.nz/)
 - [*Fundamentals of Data Visualization* par Claus O. Wilke](https://clauswilke.com/dataviz/)
+- [Do's and don'ts of making effective graphics](https://stat545.com/effective-graphs.html)
 - [Financial Times Visual Vocabulary](	https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
 - [BBC R Cookbook (optionnel)](https://bbc.github.io/rcookbook/)

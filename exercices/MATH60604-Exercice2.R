@@ -88,9 +88,9 @@ anova(linmod4)
 # Exercice 2.7
 data(automobile, package = "hecmodstat")
 
-linmod1 <- lm(consommation ~ puissance, data = automobile)
-linmod2 <- lm(consommation ~ puissance + I(puissance^2), data = automobile)
-linmod3 <- lm(consommation ~ puissance + I(puissance^2) + I(puissance^3), data = automobile)
+linmod1 <- lm(autonomie ~ puissance, data = automobile)
+linmod2 <- lm(autonomie ~ puissance + I(puissance^2), data = automobile)
+linmod3 <- lm(autonomie ~ puissance + I(puissance^2) + I(puissance^3), data = automobile)
 hps <- seq(from = 40, to = 250, length.out = 100L)
 p1 <- data.frame(x = hps,
                  predict(object = linmod1,
@@ -108,14 +108,14 @@ p3 <- data.frame(x = hps,
 
 g7 <- ggplot() +
     geom_point(data = automobile,
-               aes(x=puissance, y = consommation),
+               aes(x=puissance, y = autonomie),
                alpha = 0.5) +
     geom_line(data = p1, aes(x = x, y = fit), col = "gray") +
     geom_ribbon(data = p1,
                 aes(x = x, ymin = lwr, ymax = upr),
                 col = 1, alpha = 0.1) +
     labs(x = "puissance (en chevaux vapeurs)",
-         y = "consommation \n(en miles au gallon)",
+         y = "autonomie \n(en miles au gallon)",
          caption = "linéaire")
 g8 <- ggplot(linmod1) +
     geom_hline(yintercept = 0, col = "gray") +
@@ -123,14 +123,14 @@ g8 <- ggplot(linmod1) +
 labs(x = "valeurs ajustées", y = "résidus ordinaires")
 g9 <- ggplot() +
     geom_point(data = automobile,
-               aes(x = puissance, y = consommation),
+               aes(x = puissance, y = autonomie),
                alpha = 0.5) +
     geom_line(data = p2, aes(x = x, y = fit), col = "gray") +
     geom_ribbon(data = p2,
                 aes(x = x, ymin = lwr, ymax = upr),
                 col = 1, alpha = 0.1) +
     labs(x = "puissance (en chevaux vapeurs)",
-         y = "consommation \n(en miles au gallon)",
+         y = "autonomie \n(en miles au gallon)",
          caption = "quadratique")
 g10 <- ggplot(linmod2) +
     geom_hline(yintercept = 0, col = "gray") +
@@ -138,14 +138,14 @@ g10 <- ggplot(linmod2) +
 labs(x = "valeurs ajustées", y = "résidus ordinaires")
 g11 <- ggplot() +
     geom_point(data = automobile,
-               aes(x=puissance, y = consommation),
+               aes(x=puissance, y = autonomie),
                alpha = 0.5) +
     geom_line(data = p3, aes(x = x, y = fit), col = "gray") +
     geom_ribbon(data = p3,
                 aes(x = x, ymin = lwr, ymax = upr),
                 col = 1, alpha = 0.1) +
     labs(x = "puissance (en chevaux vapeurs)",
-         y = "consommation \n(en miles au gallon)",
+         y = "autonomie \n(en miles au gallon)",
          caption = "cubique")
 g12 <- ggplot(linmod3) +
     geom_hline(yintercept = 0, col = "gray") +

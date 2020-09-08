@@ -104,15 +104,15 @@ run;
 
 /* Exercice 2.7 */
 proc glm data=modstat.automobile plots=diagnostics;
-model consommation=puissance / ss3 solution;
+model autonomie=puissance / ss3 solution;
 run;
 
 proc glm data=modstat.automobile plots=diagnostics;
-model consommation=puissance puissance*puissance / ss3 solution;
+model autonomie=puissance puissance*puissance / ss3 solution;
 run;
 
 proc glm data=modstat.automobile plots=diagnostics;
-model consommation=puissance puissance*puissance
+model autonomie=puissance puissance*puissance
  puissance*puissance*puissance / ss3 solution;
 run;
 
