@@ -19,11 +19,12 @@ vignette: >
 
 - Interprétation des coefficients (données `intention`)
 - Retour sur les données `assurance`
-- Diagrammes de régression partielle
+- [Diagrammes de régression partielle](https://raw.githubusercontent.com/lbelzile/modstat/master/code/diagramme_regression_partielle.sas)
 
 ### Après le cours: 
 
 - Exercices 2.1-2.4
+- [xkcd: Curve-fitting](https://xkcd.com/2048/)
 
 ---
 

@@ -23,7 +23,7 @@ if(length(names) - length(video) > 0){
 }
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
 
-codesas <- list.files(path = codedir, pattern = "*.sas")
+codesas <- list.files(path = codedir, pattern = "MATH60604.*.sas")
 codestr <- rep("", ns)
 nid <- sapply(substr(codesas,11,12), function(x){which(x == substr(slides[-1], 12,13))})
 codestr[nid+1L] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
