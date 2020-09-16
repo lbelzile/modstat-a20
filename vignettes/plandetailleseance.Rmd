@@ -8,6 +8,24 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
+
+
+## Semaine 3
+
+
+### Avant le cours:
+
+- Enregistrements: 2d, 3a
+- Notes de cours: [chapitre 3](https://lbelzile.github.io/math60604a/likelihood.html), chapitre 2 (section 4)
+
+### En classe:
+
+
+- [**Understanding Maximum Likelihood** by Kristoffer Magnusson](https://rpsychologist.com/d3/likelihood/)
+
+
+---
+
 ## Semaine 2
 
 ### Avant le cours: 

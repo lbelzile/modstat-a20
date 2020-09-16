@@ -56,8 +56,9 @@ remotes::install_github("lbelzile/hecmodstat")
 
 ## Quiz
 
-Pour ouvrir un quiz dans votre navigateur, tapez la commande suivante dans une console **R**:
+Pour ouvrir un quiz dans votre navigateur, tapez un des commandes suivantes dans une console **R** pour ouvrir le quiz dans un navigateur web.
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecmodstat")
+learnr::run_tutorial("vraisemblance", package = "hecmodstat")
 ```
-pour ouvrir par exemple le tutoriel `intro` dans un navigateur web.
+

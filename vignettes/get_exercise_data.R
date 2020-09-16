@@ -31,6 +31,6 @@ linkstring <- "https://nbviewer.jupyter.org/github/lbelzile/modstat/blob/master/
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
 exdat$Exercice <- c(paste0("[exercice](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
 exdat$Solution <- c(paste0("[solution](", linkstring, so, ")"),rep("", length.out = 7-length(so)))
-exdat$`Code SAS` <- c(paste0("[code SAS](", linkgithub, "exercices/",codesas, ")"),rep("", length.out = 7-length(codesas)))
-exdat$`Code R` <- c(paste0("[code R](", linkgithub, "exercices/", coder, ")"),rep("", length.out = 7-length(coder)))
+exdat$`Code SAS` <- c(paste0("[SAS](", linkgithub, "exercices/",codesas, ")"),rep("", length.out = 7-length(codesas)))
+exdat$`Code R` <- c(paste0("[R](", linkgithub, "exercices/", coder, ")"),rep("", length.out = 7-length(coder)))
 
