@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","3_","2d","2e","2f","2g")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","3","2d","2e","2f","2g")
+index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3_")
+index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3")
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -7,11 +7,11 @@ names <- c("Plan de cours",
            "Interprétation des paramètres  (modèle linéaire)",
            "Transformations linéaires",
            "Géométrie des moindres carrés",
-           "Vraisemblance",
            "Tests d'hypothèses (modèle linéaire)",
            "Coefficient de détermination",
            "Prédictions",
-           "Interactions"
+           "Interactions",
+           "Vraisemblance"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
@@ -38,8 +38,11 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/-R-5muz1mGY",
            "https://youtu.be/4xczymEfVng",
            "https://youtu.be/2iKH0tBb6w4",
-           "https://youtu.be/EjSlJJ5CUJY",
-           "https://youtu.be/VJItA6EX5-s"
+           "https://youtu.be/EjSlJJ5CUJY", #tests 2d
+           "https://youtu.be/QtfhZCMHVAo", #correlation 2e
+           "https://youtu.be/GZx7_5tmzCg", # prédictions 2f
+           "https://youtu.be/0UrxG4hkDcg", #interactions 2g
+           "https://youtu.be/VJItA6EX5-s" #vraisemblance 3
            )
 videosl <- paste0("[vidéo](",video,")")
 if(length(names) - length(video) > 0){
