@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","3")
+index <- c("0_","1a","1b","1c","2a","2b","2c","3_","2d","2e","2f","2g")
+index0 <- c("0","1a","1b","1c","2a","2b","2c","3","2d","2e","2f","2g")
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -7,8 +7,12 @@ names <- c("Plan de cours",
            "Interprétation des paramètres  (modèle linéaire)",
            "Transformations linéaires",
            "Géométrie des moindres carrés",
+           "Vraisemblance",
            "Tests d'hypothèses (modèle linéaire)",
-           "Vraisemblance")
+           "Coefficient de détermination",
+           "Prédictions",
+           "Interactions"
+           )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
 codedir <- "../code"
@@ -16,14 +20,13 @@ codedir <- "../code"
 slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "*.html")
 slides <- slides[substr(slides, 1, 11) == "MATH60604_d"]
 sl <- rep("", ns)
-pmasl <- na.omit(pmatch(index, substr(slides, start = 12, stop = 13)))
+pmasl <- na.omit(pmatch(substr(slides, start = 12, stop = 13), index))
 sl[pmasl] <- paste0("[html](",url, slides,")")
 
 
-slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = ".*.pdf")
-slidespdf <- slidespdf[substr(slidespdf, 1, 11) == "MATH60604_d"]
+slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "MATH60604_d.*.pdf")
 slpdf <- rep("", ns)
-pmaslp <- na.omit(pmatch(index, substr(slidespdf, start = 12, stop = 13)))
+pmaslp <- na.omit(pmatch(substr(slidespdf, start = 12, stop = 13),index))
 slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")
 
 
@@ -38,21 +41,21 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/EjSlJJ5CUJY",
            "https://youtu.be/VJItA6EX5-s"
            )
-
+videosl <- paste0("[vidéo](",video,")")
 if(length(names) - length(video) > 0){
-  video <- c(video, rep("", length(names) - length(video)))
+  videosl <- c(videosl, rep("", length(names) - length(video)))
 }
 linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
 
 
 codesas <- list.files(path = codedir, pattern = "MATH60604.*.sas")
 codestr <- rep("", ns)
-nid <- sapply(substr(codesas,11,12), function(x){which(x == index)})
+nid <- na.omit(pmatch(substr(codesas,11,12), index))
 codestr[nid] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
 
 codeR <- list.files(path = codedir, pattern = "MATH60604.*.R")
 codeRstr <- rep("", ns)
-nid <- sapply(substr(codeR,11,12), function(x){pmatch(x, index)})
+nid <- na.omit(pmatch(substr(codeR,11,12), index))
 codeRstr[nid] <- paste0("[R](",linkgithub,"code/", codeR,")")
 
 
@@ -60,6 +63,6 @@ sldat <- data.frame('S' = index0,
                     Contenu = names,
                     Diapos = sl,
                     PDF = slpdf,
-                    Vidéos = paste0("[vidéo](",video,")"),
+                    Vidéos = videosl,
                     SAS = codestr,
                     R = codeRstr)
