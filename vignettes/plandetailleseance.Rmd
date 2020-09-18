@@ -9,20 +9,41 @@ vignette: >
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
 
-
-## Semaine 3
+## Semaine 4
 
 
 ### Avant le cours:
 
-- Enregistrements: 2d, 3a
-- Notes de cours: [chapitre 3](https://lbelzile.github.io/math60604a/likelihood.html), chapitre 2 (section 4)
+- Capsules vidéo 2e, 2f, 2g
+- Notes de cours: chapitre 2 (sections 5-7)
 
 ### En classe:
 
+- Atelier sur les interactions (Exercice 2.8)
 
+## Après le cours:
+
+- Exercices 2.5-2.7
+
+---
+
+## Semaine 3
+
+### Avant le cours:
+
+- Capsules vidéo 2d, 3
+- [Notes de cours (anglais)](https://lbelzile.github.io/math60604a): chapitre 3, chapitre 2 (section 4)
+
+### En classe:
+
+- Démo **R**: distribution d'échantillonage des MCO, vraisemblance profilé pour un coefficient $\beta$
+- Interprétation des tests d'une sortie **SAS** pour les données `assurance`
 - [**Understanding Maximum Likelihood** by Kristoffer Magnusson](https://rpsychologist.com/d3/likelihood/)
 
+## Après le cours
+
+- Série d'exercices 3
+- [Tests à l'aide de modèles linéaires](https://lindeloev.github.io/tests-as-linear/)
 
 ---
 
