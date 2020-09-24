@@ -135,7 +135,7 @@ lmtest::lrtest(mod2, mod3)
 anova(mod2, mod3) # loi F exacte
 anova(mod2, mod3, test = "Chisq") # approximation asymptotique
 
-# Compare AIC/BIC
+# Comparer AIC/BIC
 c(AIC(mod1), AIC(mod2), AIC(mod3))
 c(BIC(mod1), BIC(mod2), BIC(mod3))
 
