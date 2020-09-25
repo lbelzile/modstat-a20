@@ -32,6 +32,11 @@ source("get_slide_data.R")
 knitr::kable(sldat)
 ```
 
+## Devoirs
+
+- Devoir 1, à remettre au plus tard le 19 octobre: [énoncé](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), [données `diamants`](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/diamants.sas7bdat), [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
+
+
 
 ## Exercices
 
