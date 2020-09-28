@@ -19,6 +19,7 @@ vignette: >
 
 ### En classe:
 
+- [Tests pour interactions](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_interactions.sas)
 - Atelier sur les interactions (Exercice 2.8)
 
 ## Après le cours:
