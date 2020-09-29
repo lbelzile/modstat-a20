@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3_")
-index0 <- c("0","1a","1b","1c","2a","2b","2c","2d","2e","2f","2g","3")
+index <- c("0_","1a","1b","1c",paste0(2, letters[1:9]),"3_")
+index0 <- c("0","1a","1b","1c",paste0(2, letters[1:9]),"3")
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -11,6 +11,8 @@ names <- c("Plan de cours",
            "Coefficient de détermination",
            "Prédictions",
            "Interactions",
+           "Colinéarité",
+           "Diagnostics graphiques des résidus",
            "Vraisemblance"
            )
 ns <- length(index)
@@ -42,6 +44,8 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/QtfhZCMHVAo", #correlation 2e
            "https://youtu.be/GZx7_5tmzCg", # prédictions 2f
            "https://youtu.be/0UrxG4hkDcg", #interactions 2g
+           "https://youtu.be/6RxdcERzdFo", # colinearite 2h
+           "https://youtu.be/AZ6Rr1B_r7c", # diagnostics 2i
            "https://youtu.be/VJItA6EX5-s" #vraisemblance 3
            )
 videosl <- paste0("[vidéo](",video,")")

@@ -8,6 +8,25 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
+## Semaine 5
+
+### Avant le cours:
+
+- Capsules vidéo 2h, 2i
+- [Notes de cours](https://lbelzile.github.io/math60604a/linear-regression.html): chapitre 2 (sections [8](https://lbelzile.github.io/math60604a/linear-regression.html#collinearity)-[9](https://lbelzile.github.io/math60604a/linear-regression.html#graphical-analysis-of-residuals))
+
+### En classe:
+
+- Illustration de la colinéarité avec `salaire85`
+- Diagnostics graphiques des résidus pour les données `college`
+- Atelier sur les diagnostics graphiques
+
+## Après le cours:
+
+- Compléter la série d'Exercice 2
+- Devoir 1
+
+---
 
 ## Semaine 4
 
