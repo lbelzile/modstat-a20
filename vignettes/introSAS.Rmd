@@ -28,13 +28,14 @@ Pour accéder aux données du cours, utilisez l'énoncé:
 
 ### SAS® OnDemand for Academics
 
-| Détails sur le cours | |
-|:----|:----|
-| Nom du cours: |	MATH 60604|
-|Niveau:| Graduate |
-|Institution:|	HEC Montreal|
-| Code du cours: |	`50a343b3-1e64-47e1-99f6-b4fd666fd0be`|
-|Description:|	Modélisation statistique|
+Écrivez-moi pour les détails.
+<!-- | Détails sur le cours | | -->
+<!-- |:----|:----| -->
+<!-- | Nom du cours: |	MATH 60604| -->
+<!-- |Niveau:| Graduate | -->
+<!-- |Institution:|	HEC Montreal| -->
+<!-- | Code du cours: |	`50a343b3-1e64-47e1-99f6-b4fd666fd0be`| -->
+<!-- |Description:|	Modélisation statistique| -->
 
 
 ## Logiciel et Installation

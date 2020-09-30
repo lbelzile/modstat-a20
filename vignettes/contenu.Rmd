@@ -35,7 +35,7 @@ knitr::kable(sldat)
 ## Devoirs
 
 - Devoir 1, à remettre au plus tard le 19 octobre: [énoncé](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), [données `diamants`](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/diamants.sas7bdat), [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
-
+- [Projet](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604_projet.pdf), à remettre au plus tard le 16 décembre
 
 
 ## Exercices
@@ -46,6 +46,11 @@ knitr::kable(exdat, row.names = FALSE)
 ```
 
 ## Données
+
+Si vous accédez à **SAS** onDemand, vous pouvez charger les données à l'aide de 
+```{sas loadintro, eval = FALSE}
+LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
+```
 
 Les jeux de données (en format `.sas7bdat`) sont disponibles pour [téléchargement en cliquant sur ce lien](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip).
 
