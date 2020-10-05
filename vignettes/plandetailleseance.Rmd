@@ -19,7 +19,7 @@ vignette: >
 
 - Illustration de la colinéarité avec `salaire85`
 - Diagnostics graphiques des résidus pour les données `college`
-- Atelier sur les diagnostics graphiques
+- [Atelier sur les diagnostics graphiques](https://lbelzile.github.io/MATH60604-diapos/diagnosticsgraphiques.html)
 
 ## Après le cours:
 
