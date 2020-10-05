@@ -17,7 +17,7 @@ vignette: >
 
 ### En classe:
 
-- Illustration de la colinéarité avec `salaire85`
+- [Illustrations de la colinéarité](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_colinearite.sas)
 - Diagnostics graphiques des résidus pour les données `college`
 - [Atelier sur les diagnostics graphiques](https://lbelzile.github.io/MATH60604-diapos/diagnosticsgraphiques.html)
 
