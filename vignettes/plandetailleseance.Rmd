@@ -8,6 +8,16 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
+
+## Semaine 6
+
+### Avant le cours:
+
+- Capsules vidéo 4a, 4b, 4c
+- Notes de cours: chapitre 4.1-4.3
+
+---
+
 ## Semaine 5
 
 ### Avant le cours:

@@ -1,5 +1,5 @@
-index <- c("0_","1a","1b","1c",paste0(2, letters[1:9]),"3_")
-index0 <- c("0","1a","1b","1c",paste0(2, letters[1:9]),"3")
+index <- c("0_","1a","1b","1c",paste0(2, letters[1:9]),"3_", paste0(4, letters[1:8]))
+index0 <- c("0","1a","1b","1c",paste0(2, letters[1:9]),"3", paste0(4, letters[1:8]))
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -13,7 +13,15 @@ names <- c("Plan de cours",
            "Interactions",
            "Colinéarité",
            "Diagnostics graphiques des résidus",
-           "Vraisemblance"
+           "Vraisemblance",
+           "Modèles linéaires généralisés",
+           "Régression logistique",
+           "Exemple de régression logistique",
+           "Régression de Poisson",
+           "Tableaux de contingence",
+           "Surdispersion",
+           "Taux et décalage",
+           "Régression logistique pour les taux"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
@@ -46,7 +54,15 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/0UrxG4hkDcg", #interactions 2g
            "https://youtu.be/6RxdcERzdFo", # colinearite 2h
            "https://youtu.be/AZ6Rr1B_r7c", # diagnostics 2i
-           "https://youtu.be/VJItA6EX5-s" #vraisemblance 3
+           "https://youtu.be/VJItA6EX5-s", #vraisemblance 3
+           "https://youtu.be/YUp6IZbrwQ0", #4a glm
+           "https://youtu.be/r_1NfKdqy5M", #4b logistique
+           "https://youtu.be/S6gXUa-9zvE", #4c logistique exemple
+           "https://youtu.be/sjt9lKLQbZ8", #4d poisson
+           "https://youtu.be/oNDi1Bel84g", #4e tableaux de contingence
+           "https://youtu.be/YS7UE9N4HMc", #4f surdispersion
+           "https://youtu.be/Hl2c48rX98g", #4g taux et décalage
+           "https://youtu.be/6a8aoXy8Ag0" #4h régression logistique pour taux
            )
 videosl <- paste0("[vidéo](",video,")")
 if(length(names) - length(video) > 0){
