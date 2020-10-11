@@ -75,7 +75,7 @@ run;
 ods layout Start width=10in height=6in;
 ods region x=0% y=0% width=50% height=33%;
 ods graphics / noborder;
-proc sgplot data = assurance;
+proc sgplot data = modstat.assurance;
 histogram frais;
 run;
 
@@ -116,16 +116,18 @@ run;
   age versus frais - les fumeurs non-obèses et fumeurs-obèses
   paient davantage que les non-fumeurs*/
 
-data assurance;
+data assurance; 
 set modstat.assurance;
-if (obese=1 & fumeur=1) then fumobese=1; 
-else if (obese=0 & fumeur=1) then fumobese=2; 
-else fumobese=3;
+obese = (imc >= 30);
+if(obese = 1 AND fumeur="oui") then obesefum="fumeur/obèse";
+else if(obese = 0 AND fumeur = "oui") then obesefum = "fumeur/non-obèse";
+else obesefum = "non-fumeur";
+agem = age - 18;
 run;
 
 proc sgplot data=assurance;
   title "frais (en dollars) selon l'obésité et le statut de fumeur";
-  scatter y=frais x=imc / group=fumeur;
+  scatter y=frais x=imc / group=obesefum;
 run;
 
 

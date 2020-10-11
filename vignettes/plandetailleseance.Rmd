@@ -9,6 +9,13 @@ vignette: >
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
 
+**Note**: la lecture des notes de cours peut être chronophage. Elles contiennent des informations qui complémentent les diapositives et vidéos en donnant des détails théoriques et en fournissant d'autres exemples. 
+
+Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication contraire. Si je réfère à un outil/ un statistique/ un concept qui n'est pas présenté dans les diapositives, veuillez lire la section des notes de cours.
+
+J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
+
+
 ## Semaine 6
 
 ### Avant le cours:
