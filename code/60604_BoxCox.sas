@@ -42,6 +42,12 @@ class mois;
 model passagers = mois annee / solution;
 run;
 
+proc glm data=trafficaerien plots=diagnostics;
+class mois;
+model passagers = mois|annee / solution;
+run;
+
+
 /* Moins d'artefacts avec ce modèle multiplicatif */
 proc glm data=trafficaerien plots=diagnostics;
 class mois;

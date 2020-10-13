@@ -13,12 +13,19 @@ vignette: >
 Le contenu du cours est divisé en chapitres: des notes de cours, du code, des questions à choix multiples et des exercices sont disponibles pour chaque sujet.
 
 - [Bases de l'inférence statistique](https://lbelzile.github.io/math60604/intro.html)
-- [Régression linéaire](https://lbelzile.github.io/math60604/regression-lineaire.html)
-- [Modèles linéaires généralisés](https://lbelzile.github.io/math60604/modeles-lineaires-generalises.html)
-- [Données corrélées et longitudinales](https://lbelzile.github.io/math60604/donnees-correlees-longitudinales.html)
-- [Modèles linéaires mixtes](https://lbelzile.github.io/math60604/modeles-lineaires-mixtes.html)
-- [Analyse de survie](https://lbelzile.github.io/math60604/survie.html)
-- [Vraisemblance](https://lbelzile.github.io/math60604/vraisemblance.html)
+- [Régression linéaire (partiel)](https://lbelzile.github.io/math60604/regression-lineaire.html)
+- [Régression linéaire (anglais)](https://lbelzile.github.io/math60604a/linear-regression.html)
+- [Modèles linéaires généralisés (anglais)](https://lbelzile.github.io/math60604a/generalized-linear-models.html)
+- [Données corrélées et longitudinales (anglais)](https://lbelzile.github.io/math60604a/correlated-longitudinal-data.html)
+- [Modèles linéaires mixtes (anglais)](https://lbelzile.github.io/math60604a/linear-mixed-models.html)
+- [Analyse de survie (anglais)](https://lbelzile.github.io/math60604a/survival.html)
+- [Vraisemblance (anglais)](https://lbelzile.github.io/math60604a/likelihood.html)
+
+<!-- - [Modèles linéaires généralisés](https://lbelzile.github.io/math60604/modeles-lineaires-generalises.html) -->
+<!-- - [Données corrélées et longitudinales](https://lbelzile.github.io/math60604/donnees-correlees-longitudinales.html) -->
+<!-- - [Modèles linéaires mixtes](https://lbelzile.github.io/math60604/modeles-lineaires-mixtes.html) -->
+<!-- - [Analyse de survie](https://lbelzile.github.io/math60604/survie.html) -->
+<!-- - [Vraisemblance](https://lbelzile.github.io/math60604/vraisemblance.html) -->
 
 ---
 

@@ -15,19 +15,31 @@ Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication 
 
 J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
 
+## Semaine 7
+
+## Avant le cours:
+
+- Capsules vidéo: 4b-4f
+- Notes de cours: section 4.3 (sauf 4.3.3)
+
+## En classe:
+
+- [Régression logistique](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_logistique.sas)
+
+
+---
 
 ## Semaine 6
 
 ### Avant le cours:
 
-- Capsules vidéo 4a, 4b, 4c
-- Notes de cours: chapitre 4.1-4.3
+- Capsules vidéo: 4a, 4b, 4c
+- Notes de cours: sections 2.10 et 4.1-4.2
 
 ## En classe
 
-- [Régression logistique](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_logistique.sas)
 - [Transformations Box-Cox](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_BoxCox.sas)
-
+- Sondage de mi-session
 
 ---
 
