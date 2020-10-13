@@ -87,7 +87,7 @@
 
       
 
-      </header><script src="contenu_files/header-attrs-2.3/header-attrs.js"></script><div class="row">
+      </header><script src="contenu_files/header-attrs-2.4/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Matériel pédagogique</h1>
@@ -409,16 +409,18 @@
 <p>Les jeux de données (en format <code>.sas7bdat</code>) sont disponibles pour <a href="https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip">téléchargement en cliquant sur ce lien</a>.</p>
 <p>Vous pouvez également accéder aux bases de données dans <strong>R</strong> en installant le paquetage <strong>R</strong> <code>hecmodstat</code></p>
 <p>Vous pouvez installer le paquetage à partir de Github à l’aide des commandes suivantes en roulant les commandes suivantes dans <strong>R</strong> (décommentez la première ligne pour installer les bibliothèques <code>learnr</code> et <code>remotes</code>):</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="co">#install.packages(c("learnr","remotes"))</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"lbelzile/hecmodstat"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co">#install.packages(c("learnr","remotes"))</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"lbelzile/hecmodstat"</span><span class="op">)</span></pre></div>
 <p><em>Note</em>: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquetage pour bénéficier des dernières fonctionnalités.</p>
 </div>
 <div id="quiz" class="section level2">
 <h2 class="hasAnchor">
 <a href="#quiz" class="anchor"></a>Quiz</h2>
 <p>Pour ouvrir un quiz dans votre navigateur, tapez un des commandes suivantes dans une console <strong>R</strong> pour ouvrir le quiz dans un navigateur web.</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"intro"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecmodstat"</span>)
-<span class="kw pkg">learnr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span>(<span class="st">"vraisemblance"</span>, <span class="kw">package</span> <span class="kw">=</span> <span class="st">"hecmodstat"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="fu">learnr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span><span class="op">(</span><span class="st">"intro"</span>, package <span class="op">=</span> <span class="st">"hecmodstat"</span><span class="op">)</span>
+<span class="fu">learnr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/learnr/man/run_tutorial.html">run_tutorial</a></span><span class="op">(</span><span class="st">"vraisemblance"</span>, package <span class="op">=</span> <span class="st">"hecmodstat"</span><span class="op">)</span></pre></div>
 </div>
   </div>
 
@@ -437,7 +439,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

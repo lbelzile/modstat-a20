@@ -23,6 +23,12 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 - Capsules vidéo 4a, 4b, 4c
 - Notes de cours: chapitre 4.1-4.3
 
+## En classe
+
+- [Régression logistique](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_logistique.sas)
+- [Transformations Box-Cox](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_BoxCox.sas)
+
+
 ---
 
 ## Semaine 5
