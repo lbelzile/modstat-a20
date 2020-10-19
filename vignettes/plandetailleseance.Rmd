@@ -25,7 +25,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 ## En classe:
 
 - [Régression logistique](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_logistique.sas)
-
+- [Régression de Poisson et lien avec la loi binomiale](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_Poisson.sas)
 
 ---
 
