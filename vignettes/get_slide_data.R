@@ -1,5 +1,13 @@
-index <- c("0_","1a","1b","1c",paste0(2, letters[1:9]),"3_", paste0(4, letters[1:8]))
-index0 <- c("0","1a","1b","1c",paste0(2, letters[1:9]),"3", paste0(4, letters[1:8]))
+index <- c("0_","1a","1b","1c",
+           paste0(2, letters[1:9]),"3_", 
+           paste0(4, letters[1:8]),
+           paste0(5, letters[1:8]),
+           paste0(6, letters[1:6]))
+index0 <- c("0","1a","1b","1c",
+            paste0(2, letters[1:9]),"3", 
+            paste0(4, letters[1:8]),
+            paste0(5, letters[1:8]),
+            paste0(6, letters[1:6]))
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -21,7 +29,21 @@ names <- c("Plan de cours",
            "Tableaux de contingence",
            "Surdispersion",
            "Taux et décalage",
-           "Régression logistique pour les taux"
+           "Régression logistique pour les taux",
+           "Introduction aux données corrélées",
+           "Exemple de données longitudinales",
+           "Formulation de modèles",
+           "Structure d'équicorrélation",
+           "Structure autorégressive",
+           "Autres modèles de covariance",
+           "Comparaison des modèles de covariance",
+           "Hétéroscédasticité de groupe",
+           "Effet groupe",
+           "Exemple de données corrélées",
+           "Modèles mixtes",
+           "Ordonnée à l'origine aléatoire",
+           "Pente aléatoire",
+           "Prédictions de modèles mixtes"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"

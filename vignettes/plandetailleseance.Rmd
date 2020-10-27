@@ -15,7 +15,19 @@ Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication 
 
 J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
 
-## Semaine 7
+---
+
+## Séance 8
+
+### Avant le cours:
+
+- Capsules vidéos 4h-4g, 5a
+
+
+
+--- 
+
+## Séance 7
 
 ## Avant le cours:
 
@@ -29,7 +41,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 6
+## Séance 6
 
 ### Avant le cours:
 
@@ -43,7 +55,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 5
+## Séance 5
 
 ### Avant le cours:
 
@@ -63,7 +75,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 4
+## Séance 4
 
 
 ### Avant le cours:
@@ -82,7 +94,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 3
+## Séance 3
 
 ### Avant le cours:
 
@@ -102,7 +114,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 2
+## Séance 2
 
 ### Avant le cours: 
 
@@ -122,7 +134,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ---
 
-## Semaine 1
+## Séance 1
 
 ### Avant le cours: 
 
@@ -139,7 +151,7 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 ### Après le cours
 
 - Quiz 1 (`intro`)
-- Exercice 1.4 (a) et (b) avec **SAS**. *Note: cette série d'exercices est probablement difficile à l'heure actuelle, mais vous devriez être en mesure de la compléter dans quelques semaines.*
+- Exercice 1.4 (a) et (b) avec **SAS**. *Note: cette série d'exercices est probablement difficile à l'heure actuelle, mais vous devriez être en mesure de la compléter dans quelques Séances.*
 
 
 ### Lectures additionnelles:
