@@ -84,7 +84,8 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/oNDi1Bel84g", #4e tableaux de contingence
            "https://youtu.be/YS7UE9N4HMc", #4f surdispersion
            "https://youtu.be/Hl2c48rX98g", #4g taux et décalage
-           "https://youtu.be/6a8aoXy8Ag0" #4h régression logistique pour taux
+           "https://youtu.be/6a8aoXy8Ag0", #4h régression logistique pour taux
+           "https://youtu.be/ytwbRVTXAfc" #5a
            )
 videosl <- paste0("[vidéo](",video,")")
 if(length(names) - length(video) > 0){
