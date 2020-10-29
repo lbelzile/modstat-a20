@@ -38,9 +38,9 @@ names <- c("Plan de cours",
            "Autres modèles de covariance",
            "Comparaison des modèles de covariance",
            "Hétéroscédasticité de groupe",
-           "Effet groupe",
+           "Effet groupe pour la moyenne",
            "Exemple de données corrélées",
-           "Modèles mixtes",
+           "Modèles linéaires mixtes",
            "Ordonnée à l'origine aléatoire",
            "Pente aléatoire",
            "Prédictions de modèles mixtes"
@@ -85,7 +85,20 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/YS7UE9N4HMc", #4f surdispersion
            "https://youtu.be/Hl2c48rX98g", #4g taux et décalage
            "https://youtu.be/6a8aoXy8Ag0", #4h régression logistique pour taux
-           "https://youtu.be/ytwbRVTXAfc" #5a
+           "https://youtu.be/ytwbRVTXAfc", #5a
+           "https://youtu.be/X2aWOAwi3s8", #5b
+           "https://youtu.be/dep7O7jZEqw", #5c
+           "https://youtu.be/150FoT7b4TM", #5d
+           "https://youtu.be/luy5E-thK_s", #5e
+           "https://youtu.be/owY9s0HINYg", #5f
+           "https://youtu.be/3dJ_u-Svr6Y", #5g
+           "https://youtu.be/3S0GQ7FJfn0", #5h
+           "https://youtu.be/7X09JMf_HtY", #6a
+           "https://youtu.be/lpQSuZmmuH0", #6b
+           "https://youtu.be/A-YotBQLd5Q", #6c
+           "https://youtu.be/kPbguCg05e0", #6d
+           "https://youtu.be/lnNfzyKGglA", #6e
+           "https://youtu.be/V6-xQXuMTzo" #6f
            )
 videosl <- paste0("[vidéo](",video,")")
 if(length(names) - length(video) > 0){
