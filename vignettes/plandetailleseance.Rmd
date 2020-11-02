@@ -23,9 +23,13 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 - Capsules vidéos 4h-4g, 5a
 
+## En classe:
 
+- [Tableaux de contingence](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_tableauxcontingence.sas)
+- [Paradoxe de Simpson](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_Simpson.sas)
+- Exercices 4.3 et 4.4 (décalage et surdispersion)
 
---- 
+---
 
 ## Séance 7
 
