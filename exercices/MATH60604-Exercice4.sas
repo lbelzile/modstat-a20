@@ -76,6 +76,79 @@ model nenfants = res dur educ dur*educ /
 run;
 
 /* Exercice 4.4 */
+
+data enfantsfiji;
+set modstat.enfantsfiji;
+lognfemmes = log(nfemmes);
+menfants = nenfants/nfemmes;
+run;
+
+proc sgplot data=enfantsfiji;
+scatter x=nfemmes y=nenfants;
+yaxis type=log label="nombre d'enfants nés (log)";
+xaxis type=log label="nombre de femmes (log)";
+run;
+
+proc sgplot data=enfantsfiji;
+scatter x=menfants y=var;
+xaxis label="moyenne du nombre d'enfants nés";
+yaxis label="variance du nombre d'enfants nés";
+run;
+
+proc genmod data=enfantsfiji;
+class res(ref="1") dur(ref="1") educ(ref="1");
+model nenfants = res dur educ / 
+	offset=lognfemmes dist=poisson link=log type3 lrci;
+output out=residfiji stdresdev=devres;
+run;
+
+proc genmod data=enfantsfiji;
+class res(ref="1") dur(ref="1") educ(ref="1");
+model nenfants = res dur educ dur*educ / 
+	offset=lognfemmes dist=poisson link=log type3;
+run;
+
+ /* Exercice 4.4 */
+proc genmod data=modstat.bixi;
+class fds;
+model nutilisateurs = fds / type3 dist=poisson link=log;
+run;
+
+proc genmod data=modstat.bixi;
+class fds;
+model nutilisateurs = temp humid fds / type3 dist=poisson link=log;
+run;
+
+data valp;
+valp = 1-CDF("chisq", 2726.9674- 1954.0018, 2);
+run;
+proc print data=valp;
+var valp;
+run;
+
+proc genmod data=modstat.bixi;
+class fds;
+model nutilisateurs = temp humid fds / type3 dist=negbin link=log;
+run;
+
+proc genmod data=modstat.bixi;
+class jour;
+model nutilisateurs = temp humid jour / type3 dist=negbin link=log;
+run;
+
+/* Comparaison modèle avec indicateur pour 
+chaque jour de semaine vs fin de semaine 
+Test de rapport de vraisemblance */
+data valp;
+valp = 1-CDF("chisq", 522.3013 - 521.9627, 496-491);
+run;
+proc print data=valp;
+var valp;
+run;
+
+
+
+/* Exercice 4.5 */
 data cancer;
 set modstat.cancer;
 total = non + oui;
@@ -98,7 +171,7 @@ class age maligne;
 model oui/total = maligne / dist=binomial link=logit type1;
 run;
 
-/* Exercice 4.5 */
+/* Exercice 4.6 */
 
 data fumeurs;
 set modstat.fumeurs;

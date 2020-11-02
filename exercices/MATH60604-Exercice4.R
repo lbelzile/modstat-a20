@@ -93,7 +93,7 @@ mod3p3 <- glm(nenfants ~ dur * educ + res  + offset(log(nfemmes)), data = enfant
 anova(mod3p1, mod3p3, test = "LRT")
 
 ###############################
-#######  Exercice 4.4  ########
+#######  Exercice 4.5  ########
 ###############################
 
 # Données tirées de Bishop, Y. M. M. ; Fienberg, S. E. and Holland, P. W. (1975) 
@@ -142,7 +142,7 @@ deviance(cancer.m2) / cancer.m2$df.residual
 pchisq(deviance(cancer.m2), df = nrow(cancer) - length(coef(cancer.m2)), lower.tail = FALSE)
 
 ###############################
-#######  Exercice 4.5  ########
+#######  Exercice 4.6  ########
 ###############################
 data(fumeurs, package = "hecmodstat")
 fumeur.p.m0 <- glm(morts ~ offset(log(pop)), family = poisson, data = fumeurs)

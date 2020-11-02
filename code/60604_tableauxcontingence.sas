@@ -28,23 +28,3 @@ proc plm restore=sortie_modele;
 score data=drogue out=preds pred=pred / ilink;
 run;
 
-
-/* Mesures d'aide pour les individus atteints du sida (VIH) 
- Exercice 7.4 + tableau 7.19 (Agresti)*/
-data vih;
-input sexe $ info $ supporte total;
-cards;
-homme supporte 76 236
-homme oppose 6 31
-homme supporte 114 295
-femme oppose 11 59
-;
-run;
-
-/* Données binomiales - relativement au modèle Poisson, on ne peut 
- estimer certains paramètres parce qu'on conditionne sur la somme*/
-proc genmod data=vih2;
-class sexe info ;
-model supporte/total = sexe info / dist=binom link=logit type3;
-run;
-
