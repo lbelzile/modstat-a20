@@ -9,11 +9,55 @@ vignette: >
   %\VignetteIndexEntry{Plan détaillé des séances}
 ---
 
+```{r, echo = FALSE,eval = TRUE}
+source("get_slide_data.R")
+```
+
 **Note**: la lecture des notes de cours peut être chronophage. Elles contiennent des informations qui complémentent les diapositives et vidéos en donnant des détails théoriques et en fournissant d'autres exemples. 
 
-Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication contraire. Si je réfère à un outil/ un statistique/ un concept qui n'est pas présenté dans les diapositives, veuillez lire la section des notes de cours.
+Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication contraire. Si je réfère à un outil, une statistique ou un concept qui n'est pas présenté dans les diapositives, veuillez lire la section des notes de cours.
 
 J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
+
+---
+
+## Séance 12
+
+### Avant le cours:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
+## Séance 11
+
+### Avant le cours:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
+## Séance 10
+
+### Avant le cours:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
+## Séance 9
+
+### Avant le cours:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("5b","5c","5d","5e","5f")),-3], align = "llccccc", row.names = FALSE)
+```
 
 ---
 
@@ -21,7 +65,10 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours:
 
-- Capsules vidéos 4h-4g, 5a
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4g","4h","5a")),-3], align = "llccccc", row.names = FALSE)
+```
+
 
 ## En classe:
 
@@ -35,7 +82,9 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ## Avant le cours:
 
-- Capsules vidéo: 4b-4f
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4d","4e","4f")),-3], align = "llccccc", row.names = FALSE)
+```
 - Notes de cours: section 4.3 (sauf 4.3.3)
 
 ## En classe:
@@ -49,7 +98,9 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours:
 
-- Capsules vidéo: 4a, 4b, 4c
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("4a","4b","4c")),-3], align = "llccccc", row.names = FALSE)
+```
 - Notes de cours: sections 2.10 et 4.1-4.2
 
 ## En classe
@@ -63,7 +114,9 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours:
 
-- Capsules vidéo 2h, 2i
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2h","2i")),], align = "llccccc", row.names = FALSE)
+```
 - [Notes de cours](https://lbelzile.github.io/math60604a/linear-regression.html): chapitre 2 (sections [8](https://lbelzile.github.io/math60604a/linear-regression.html#collinearity)-[9](https://lbelzile.github.io/math60604a/linear-regression.html#graphical-analysis-of-residuals))
 
 ### En classe:
@@ -84,7 +137,9 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours:
 
-- Capsules vidéo 2e, 2f, 2g
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2e","2f","2g")),-3], align = "llccccc", row.names = FALSE)
+```
 - Notes de cours: chapitre 2 (sections 5-7)
 
 ### En classe:
@@ -102,7 +157,10 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours:
 
-- Capsules vidéo 2d, 3
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2d","3")),-3], align = "llccccc", row.names = FALSE)
+```
+
 - [Notes de cours (anglais)](https://lbelzile.github.io/math60604a): chapitre 3, chapitre 2 (section 4)
 
 ### En classe:
@@ -122,7 +180,12 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours: 
 
-- Capsules vidéo 2a, 2b (2c optionnelle)
+La capsule 2c est optionnelle
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("2a","2b","2c")),], align = "llccccc", row.names = FALSE)
+```
+
 - Notes de cours: chapitre 2, sections 2.1 à 2.3
 
 ### En classe:
@@ -142,7 +205,10 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 
 ### Avant le cours: 
 
-- Capsule vidéos: 0, 1a, 1b, 1c
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc", row.names = FALSE)
+```
+
 - Notes de cours: chapitre 1 et annexe A
 - Créez un compte pour **SAS** onDemand 
 - Complétez l'[Introduction à **SAS**](https://lbelzile.github.io/modstat/articles/introSAS.html)

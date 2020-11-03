@@ -91,6 +91,25 @@ pchisq(deviance(mod3p1), df = mod3p1$df.residual, lower.tail = FALSE)
 # Comparaison de modèles emboîtés
 mod3p3 <- glm(nenfants ~ dur * educ + res  + offset(log(nfemmes)), data = enfantsfiji, family = poisson)
 anova(mod3p1, mod3p3, test = "LRT")
+###############################
+#######  Exercice 4.4  ########
+###############################
+
+data(bixi, package = "hecmodstat")
+
+mod4p1 <- glm(nutilisateurs ~ fds, data = bixi, family = poisson(link="log")) 
+mod4p2 <- glm(nutilisateurs ~ fds + temp + humid, data = bixi, family = poisson(link="log")) 
+anova(mod4p1, mod4p2)
+
+mod4p3 <- MASS::glm.nb(nutilisateurs ~ fds + temp + humid, data = bixi)
+# Surdispersion
+# Test du rapport de vraisemblance bin nég. versus Poisson 
+# loi nulle est 0.5* khi-deux. En pratique, diviser la valeur-p par deux
+pchisq(q = as.numeric(2*(logLik(mod4p3) - logLik(mod4p2))), df = 1, lower.tail = FALSE)/2
+# Rejette H0: Modèle Poisson n'est pas une "simplification adéquate" du modèle binom nég
+mod4p4 <- MASS::glm.nb(nutilisateurs ~ factor(jour) + temp + humid, data = bixi)
+# Comparer modèle avec un effet différent pour chaque jour versus H0: semaine/fds
+anova(mod4p4, mod4p3)
 
 ###############################
 #######  Exercice 4.5  ########

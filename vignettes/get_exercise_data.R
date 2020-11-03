@@ -18,10 +18,10 @@ coder <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]].R",
 
 sas <- rep("", 7)
 sas[as.integer(substr(codesas, start = 19, stop = 19))] <- 
-  paste0("[SAS](", linkgithub, "exercices/",codesas, ")")
+  paste0("[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](", linkgithub, "exercices/",codesas, ")")
 rc <- rep("",7)
 rc[as.integer(substr(coder, start = 19, stop = 19))] <- 
-  paste0("[R](", linkgithub, "exercices/", coder, ")")
+  paste0("[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](", linkgithub, "exercices/", coder, ")")
 
 
 so <- list.files(path = exdir, pattern = "MATH60604-Exercice[[:digit:]]-sol.pdf", 
@@ -39,12 +39,14 @@ topics <-
     "Données corrélées et longitudinales",
     "Modèles linéaires mixtes",
     "Analyse de survie")
-exdat <- data.frame(Chapitre = topics)
 
-
-## Links
-exdat$Exercice <- c(paste0("[exercice](", linkstring, ex, ")"),rep("", length.out = 7-length(ex)))
-exdat$Solution <- c(paste0("[solution](", linkstring, so, ")"),rep("", length.out = 7-length(so)))
-exdat$`Code SAS` <- sas
-exdat$`Code R` <- rc
+exos <- c(paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](", linkstring, ex, ")"),
+  rep("", length.out = 7-length(ex)))
+soln <- c(paste0("[<span style='color: #bfc2c5;'><i class='far fa-file-pdf fa-lg'></i></span>](", linkstring, so, ")"),
+          rep("", length.out = 7-length(so)))
+exdat <- data.frame(Chapitre = topics,
+                    Exercice = exos,
+                    Solution = soln,
+                    "SAS" = sas,
+                    "R" = rc)
 

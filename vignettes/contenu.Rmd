@@ -44,7 +44,7 @@ Cette section contient des liens vers les vidéos ainsi que le code et les diapo
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_slide_data.R")
 
-knitr::kable(sldat)
+knitr::kable(sldat, align = "llccccc")
 ```
 
 ---
@@ -53,7 +53,7 @@ knitr::kable(sldat)
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("get_exercise_data.R")
-knitr::kable(exdat, row.names = FALSE)
+knitr::kable(exdat, row.names = TRUE, align = "lcccc")
 ```
 
 ## Données

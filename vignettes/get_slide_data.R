@@ -53,13 +53,13 @@ slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-
 slides <- slides[substr(slides, 1, 11) == "MATH60604_d"]
 sl <- rep("", ns)
 pmasl <- na.omit(pmatch(substr(slides, start = 12, stop = 13), index))
-sl[pmasl] <- paste0("[html](",url, slides,")")
+sl[pmasl] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-desktop fa-lg'></i></span>](",url, slides,")")
 
 
 slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "MATH60604_d.*.pdf")
 slpdf <- rep("", ns)
 pmaslp <- na.omit(pmatch(substr(slidespdf, start = 12, stop = 13),index))
-slpdf[pmaslp] <- paste0("[pdf](",url, slidespdf,")")
+slpdf[pmaslp] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](",url, slidespdf,")")
 
 
 
@@ -100,7 +100,7 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/lnNfzyKGglA", #6e
            "https://youtu.be/V6-xQXuMTzo" #6f
            )
-videosl <- paste0("[vidéo](",video,")")
+videosl <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](",video,")")
 if(length(names) - length(video) > 0){
   videosl <- c(videosl, rep("", length(names) - length(video)))
 }
@@ -110,18 +110,18 @@ linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/master/"
 codesas <- list.files(path = codedir, pattern = "MATH60604.*.sas")
 codestr <- rep("", ns)
 nid <- na.omit(pmatch(substr(codesas,11,12), index))
-codestr[nid] <- paste0("[SAS](",linkgithub, "code/", codesas,")")
+codestr[nid] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](",linkgithub, "code/", codesas,")")
 
 codeR <- list.files(path = codedir, pattern = "MATH60604.*.R")
 codeRstr <- rep("", ns)
 nid <- na.omit(pmatch(substr(codeR,11,12), index))
-codeRstr[nid] <- paste0("[R](",linkgithub,"code/", codeR,")")
+codeRstr[nid] <- paste0("[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](",linkgithub,"code/", codeR,")")
 
 
 sldat <- data.frame('S' = index0, 
                     Contenu = names,
-                    Diapos = sl,
-                    PDF = slpdf,
+                    HTML = sl,
+                    Diapos = slpdf,
                     Vidéos = videosl,
-                    SAS = codestr,
-                    R = codeRstr)
+                    "SAS" = codestr,
+                    "R" = codeRstr)
