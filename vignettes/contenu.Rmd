@@ -60,7 +60,7 @@ knitr::kable(exdat, row.names = TRUE, align = "lcccc")
 
 Si vous accédez à **SAS** onDemand, vous pouvez charger les données à l'aide de 
 ```{sas loadintro, eval = FALSE}
-LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
+LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;
 ```
 
 Les jeux de données (en format `.sas7bdat`) sont disponibles pour [téléchargement en cliquant sur ce lien](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip).
