@@ -33,19 +33,8 @@ Le contenu du cours est divisé en chapitres: des notes de cours, du code, des q
 
 - Devoir 1, à remettre au plus tard le 19 octobre: [énoncé](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), [données `diamants`](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/diamants.sas7bdat), [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
 - [Devoir 2](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir2.pdf)
+- [Devoir 3](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir3.pdf)
 - [Projet](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604_projet.pdf), à remettre au plus tard le 16 décembre
-
----
-
-## Vidéos et diapositives
-
-Cette section contient des liens vers les vidéos ainsi que le code et les diapositives utilisés dans ces dernières.
-
-```{r, echo=FALSE, eval=TRUE, message=FALSE}
-source("get_slide_data.R")
-
-knitr::kable(sldat, align = "llccccc")
-```
 
 ---
 
@@ -81,5 +70,18 @@ Pour ouvrir un quiz dans votre navigateur, tapez un des commandes suivantes dans
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecmodstat")
 learnr::run_tutorial("vraisemblance", package = "hecmodstat")
+```
+
+
+---
+
+## Vidéos et diapositives
+
+Cette section contient des liens vers les vidéos ainsi que le code et les diapositives utilisés dans ces dernières.
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("get_slide_data.R")
+
+knitr::kable(sldat, align = "llccccc")
 ```
 
