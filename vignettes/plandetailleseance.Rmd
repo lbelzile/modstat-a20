@@ -49,6 +49,13 @@ knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc",
 knitr::kable(sldat[which(sldat$S %in% c("5g","5h","6a")),-3], align = "llccccc", row.names = FALSE)
 ```
 
+- [Quiz](https://www.wooclap.com/MODSTAT10)
+- [Graphique des dépendances](https://raw.githubusercontent.com/lbelzile/statmod/master/misc/DAG.png) entre les [différents modèles de covariance](https://raw.githubusercontent.com/lbelzile/statmod/master/misc/SAS_PROC_mixed_covmodels.pdf)
+- [Modèle AR(1) avec pas de temps irréguliers](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_longitudinal.sas)
+- [Atelier: tester les restrictions](https://raw.githubusercontent.com/lbelzile/modstat/master/atelier/60604_tests_longitudinal.txt)
+- [ANOVA avec variances inégales](https://raw.githubusercontent.com/lbelzile/statmod/master/code/60604_ANOVA_variance.sas)
+
+
 ---
 
 ## Séance 9
