@@ -61,8 +61,8 @@ set beattheblues;
    idb=idb0; mois=0; t=1; output;
    idb=idb2; mois=2; t=2; output;
    idb=idb4; mois=4; t=3; output;
-   idb=idb6; mois=8; t=4; output;
-   idb=idb8; mois=10; t=5; output;
+   idb=idb6; mois=6; t=4; output;
+   idb=idb8; mois=8; t=5; output;
    drop idb0 idb2 idb4 idb6 idb8;
 run;
 
