@@ -2,12 +2,14 @@ index <- c("0_","1a","1b","1c",
            paste0(2, letters[1:9]),"3_", 
            paste0(4, letters[1:8]),
            paste0(5, letters[1:8]),
-           paste0(6, letters[1:6]))
+           paste0(6, letters[1:6]),
+           paste0(7, letters[1:5]))
 index0 <- c("0","1a","1b","1c",
             paste0(2, letters[1:9]),"3", 
             paste0(4, letters[1:8]),
             paste0(5, letters[1:8]),
-            paste0(6, letters[1:6]))
+            paste0(6, letters[1:6]),
+            paste0(7, letters[1:5]))
 names <- c("Plan de cours",
            "Tests d'hypothèses",
            "Théorème central limite",
@@ -43,7 +45,12 @@ names <- c("Plan de cours",
            "Modèles linéaires mixtes",
            "Ordonnée à l'origine aléatoire",
            "Pente aléatoire",
-           "Prédictions de modèles mixtes"
+           "Prédictions de modèles mixtes",
+           "Concepts d'analyse de survie",
+           "Survie et vraisemblance",
+           "Estimateur de Kaplan-Meier",
+           "Modèle à risques proportionnels de Cox",
+           "Test du log rang"
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"

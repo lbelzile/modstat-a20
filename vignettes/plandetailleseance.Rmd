@@ -13,11 +13,7 @@ vignette: >
 source("get_slide_data.R")
 ```
 
-**Note**: la lecture des notes de cours peut être chronophage. Elles contiennent des informations qui complémentent les diapositives et vidéos en donnant des détails théoriques et en fournissant d'autres exemples. 
-
-Vous êtes responsables uniquement pour le contenu des vidéos, sauf indication contraire. Si je réfère à un outil, une statistique ou un concept qui n'est pas présenté dans les diapositives, veuillez lire la section des notes de cours.
-
-J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
+**Note**: Vous êtes responsables uniquement pour le contenu des vidéos et des diapositives, sauf indication contraire. J'indique néanmoins à titre indicatif les sections des notes de cours qui correspondent à la matière.
 
 ---
 
@@ -28,6 +24,15 @@ J'indique néanmoins à titre indicatif les sections des notes de cours qui corr
 ```{r, echo = FALSE}
 knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.names = FALSE)
 ```
+
+## En classe:
+
+- Révision
+  - prédictions marginales et conditionnelles
+  - effets aléatoires emboîtés
+  - [mise en commun partielle (article de blogue)](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
+- Analyse de courbes de croissance (`poussin`): [SAS](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_pente_aleatoire.sas) and [R code](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_pente_aleatoire.R)
+- Atelier: [modèles avec effets aléatoires](https://raw.githubusercontent.com/lbelzile/modstat/master/atelier/60604_pente_aleatoire.txt)
 
 ---
 
