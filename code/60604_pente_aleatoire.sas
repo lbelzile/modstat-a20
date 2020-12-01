@@ -24,7 +24,7 @@ proc print data=valp;
 var valp;
 run;
 /* Preuves écrasantes que la pente et l'ordonnée à l'origine sont corrélées
-l'estimé de omega_{12} est négatif, la corrélation estimée est de -0.98! */
+l'estimé de omega_{12} est négatif, la corrélation estimée est de -0.92! */
 
 
 /* Plutôt qu'un effet fixe pour régime, 
@@ -33,7 +33,7 @@ En revanche les poussins sont emboîtés au sein de régime.
 Pas un problème pour l'ajustement tant que les identifiants sont uniques */
 proc mixed data=modstat.poussin;
 class poussin regime;
-model masse = temps / outp=pred3 outpm=pred2;
+model masse = temps regime / outp=pred3 outpm=pred2;
 /* outpm est la moyenne marginale (Xbeta), 
  outp est la moyenne conditionnelle (Xbeta+Zb) */
 random intercept temps / type=un subject=poussin(regime);

@@ -105,7 +105,12 @@ video <- c("https://youtu.be/kC5S4h0bIaw",
            "https://youtu.be/A-YotBQLd5Q", #6c
            "https://youtu.be/kPbguCg05e0", #6d
            "https://youtu.be/lnNfzyKGglA", #6e
-           "https://youtu.be/V6-xQXuMTzo" #6f
+           "https://youtu.be/V6-xQXuMTzo", #6f
+           "https://youtu.be/YZbgs4aj_Bg", #7a
+           "https://youtu.be/S_WjH5u4SC8", #7b
+           "https://youtu.be/iWNid5x4BKE", #7c
+           "https://youtu.be/d5wRThO3lLA", #7d
+           "https://youtu.be/yuSZNBt8Pxk"
            )
 videosl <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](",video,")")
 if(length(names) - length(video) > 0){

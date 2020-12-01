@@ -1,3 +1,12 @@
+data(college, package = "hecmodstat")
+college <- college[order(college$echelon, college$sexe),]
+mod0 <- lme4::lmer(salaire ~ echelon + domaine + (1 |echelon) + annees +
+                     sexe, data = college)
+
+image(cov2cor(rescov(mod0, college)), 
+      sub = "", xlab = "", ylab = "")
+modb <- lm(salaire ~ domaine + sexe + annees +
+                   echelon, data = college)
 library(lme4)
 data(poussin, package = "hecmodstat")
 # Ajuster un modèle avec regime comme effet fixe
@@ -34,6 +43,10 @@ rescov <- function(model, data) {
 }
 # Imprimer la matrice de covariance du modèle multi-niveau (emboîtés)
 rc3 <- rescov(mod3, poussin)
+# Graphique de la matrice de corrélation
+image(cov2cor(rc3), sub = "", xlab = "", ylab = "")
+
+rc3 <- rescov(mod3, poussin[poussin$poussin == 38,])
 # Graphique de la matrice de corrélation
 image(cov2cor(rc3), sub = "", xlab = "", ylab = "")
 

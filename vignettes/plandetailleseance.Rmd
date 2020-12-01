@@ -17,6 +17,16 @@ source("get_slide_data.R")
 
 ---
 
+## Séance 13
+
+### Avant le cours:
+
+```{r, echo = FALSE}
+knitr::kable(sldat[which(sldat$S %in% c("7a","7b","7c","7d","7e")),-3], align = "llccccc", row.names = FALSE)
+```
+
+---
+
 ## Séance 12
 
 ### Avant le cours:

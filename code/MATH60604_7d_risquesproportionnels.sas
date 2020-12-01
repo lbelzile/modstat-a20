@@ -7,10 +7,6 @@ proc freq data=modstat.melanome;
   tables statut ulcere;
 run;
 
-/* Estimateur de Kaplan-Meier */
-proc lifetest data=modstat.melanome method=km plots=(s(cl)) rmst;
-time temps*statut(0);
-run;
 
 /* Modèle de Cox à risques proportionnels */
 proc phreg data=modstat.melanome;
