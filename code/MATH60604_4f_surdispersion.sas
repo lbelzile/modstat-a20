@@ -35,4 +35,4 @@ class educ revenu;
 model lognachat=sexe age revenu educ statut
      fixation emotion / dist=normal link=identity lrci type3;
 run;
-/* AVERTISSEMENT: on peut utiliser les critères d'information pour comparer les modèles parce qu'ils n'ont pas la même réponse -  (1+nachat) versus nachat */
+/* AVERTISSEMENT: on ne peut utiliser les critères d'information pour comparer les modèles parce qu'ils n'ont pas la même réponse -  (1+nachat) versus nachat */
