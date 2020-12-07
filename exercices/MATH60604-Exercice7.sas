@@ -8,6 +8,11 @@ proc phreg data=modstat.allaitement;
 model duree*censure(0) =  pauvrete fumeur scolarite agemere / ties=exact;
 run;
 
+/*  La statistique du log rang n'est pas identique, la faute aux doublons
+Même conclusion, statistiqus légèrement différentes */
+proc phreg data=modstat.allaitement;
+model duree*censure(0) = fumeur / ties=exact;
+run;
 
 /* Exercice 7.2 */
 proc lifetest data=modstat.chaussures method=km plots=(s(cl));

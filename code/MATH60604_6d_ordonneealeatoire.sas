@@ -23,6 +23,17 @@ run;
 proc mixed data=vengeance; 
 class id tcat; 
 model vengeance = sexe age vc wom t / solution;
-random intercept / subject=id v=1 vcorr=1; 
+random intercept / subject=id v=1 vcorr=1 solution; 
+/* En ajoutant "solution" sur la liste précédente, 
+on crée un tableau avec les prédictions de 
+l'ordonnée à l'origine aléatoire */
 repeated tcat / subject=id type=ar(1) r=1 rcorr=1;
+ods output Mixed.SolutionR=effalea;
+/* Enregistrer ce tableau dans une base de données temporaires */
+run;
+
+/* Diagramme quantile-quantile des effets prédits */
+proc univariate data=effalea noprint;
+qqplot estimate / normal(mu=est sigma=est l=2)
+square;
 run;
