@@ -111,8 +111,108 @@ mod4p4 <- MASS::glm.nb(nutilisateurs ~ factor(jour) + temp + humid, data = bixi)
 # Comparer modèle avec un effet différent pour chaque jour versus H0: semaine/fds
 anova(mod4p4, mod4p3)
 
+
+
 ###############################
 #######  Exercice 4.5  ########
+###############################
+
+data(socceragg, package = "hecmodstat")
+xtabs(total ~ domicile + visiteur, data = socceragg)
+model_ctab <- glm(data = socceragg, 
+                  total ~ domicile + visiteur,
+                  family=poisson)
+pchisq(q = deviance(model_ctab), 
+       df = df.residual(model_ctab), 
+       lower.tail = FALSE) 
+
+data(soccer, package = "hecmodstat")
+mod0 <- glm(buts ~ equipe + adversaire + domicile,
+            data = soccer, family=poisson)
+coef(mod0)["domicile"]
+confint(mod0)["domicile",]
+car::Anova(mod0, type=3)
+
+set.seed(1234)
+B <- 9999
+dev_valp <- rep(0, B)
+soccerfictif <- soccer
+for(i in 1:B){
+  soccerfictif$buts <- rpois(n = nrow(soccer), lambda = exp(mod0$linear.predictors))
+  dev_valp[i] <- deviance(glm(buts ~ equipe + adversaire + domicile,
+                             data = soccerfictif, family=poisson))
+}
+mean(dev_valp > deviance(mod0))
+pchisq(deviance(mod0), df.residual(mod0), lower.tail = FALSE)
+
+pdf("approx_deviance.pdf", width = 5, height = 2.5)
+par(mar = c(4,4,1,1))
+curve(dchisq(x, df = 720), from = 600,to = 950, bty = 'l', 
+      ylim = c(0, 0.015), yaxs="i", ylab = "density", xlab= '')
+hist(dev_valp, add = TRUE, freq = FALSE, col = scales::alpha(1, 0.1))
+dev.off()
+
+mod1 <- glm(score ~ equipe + adversaire + domicile + equipe*domicile + adversaire*domicile,
+            data = soccer, family=poisson)
+anova(mod0, mod1, test = "LRT")
+
+nouv_donnees <- data.frame(equipe = c("Manchester United", "Liverpool"), 
+                     adversaire = c("Liverpool", "Manchester United"),
+                     domicile = c(1,0))
+predict(mod0, newdata = nouv_donnees, type = "response")
+
+
+###############################
+#######  Exercice 4.6  ########
+###############################
+
+data(buchanan, package = "hecmodstat")
+with(buchanan, sum(buch) / sum(totmb + buch))
+library(ggplot2)
+col <- rep(1, nrow(buchanan)); col[50] <- 2
+g1 <- ggplot(data = buchanan, 
+             aes(y = 100*buch/(totmb + buch), x =log(totmb))) +
+  geom_point(col = col) + 
+  xlab("population du comté (échelle log)") + 
+  ylab("pourcentage des suffrages\n exprimés pour Buchanan") + 
+  theme_minimal()
+g2 <- ggplot(data = buchanan, 
+             aes(y = log(buch), x =log(popn))) +
+  geom_point(col = col) + 
+  xlab("nombre de votes valides (échelle log)") + 
+  ylab("nombre de votes pour\n Buchanan (échelle log)") +
+  theme_minimal()
+library(patchwork)
+g1 + g2
+
+modfl1 <- glm(data = buchanan, subset = comte != "Palm Beach", 
+              buch ~ blanc + log(hisp) + a65 + dsec + log(coll) + revenu + offset(log(totmb)), family = poisson)
+modfl2 <- MASS::glm.nb(data = buchanan, subset = comte != "Palm Beach",
+                       buch ~ blanc + log(hisp) + a65 + dsec + log(coll) + revenu + offset(log(totmb)))
+pchisq(deviance(modfl2), df.residual(modfl2), lower.tail = FALSE)
+anova(modfl1, modfl2)
+
+predict(modfl2, newdata = buchanan[50,], type = "response")
+predict(modfl1, newdata = buchanan[50,], type = "response")
+# Intervalles de prédictions approximatifs
+# basés sur l'approximation asymptotique normale
+# de la distribution d'échantillonage des betas
+B <- 1e4
+xPB <- with(buchanan[50,], c(1, blanc, log(hisp), a65, dsec, log(coll), revenu, log(totmb)))
+predc <- apply(MASS::mvrnorm(n=B, mu = coef(modfl2), Sigma = vcov(modfl2)), 1, function(beta){
+  mu <- exp(sum(xPB * c(beta,1)))
+  pred <- MASS::rnegbin(n = 1, mu = mu, theta = rnorm(1, modfl2$theta, modfl2$SE.theta))
+  return(c(mu, pred))
+})
+quantile(predc[1,], c(0.025, 0.975)) 
+# Intervalle de confiance pour la moyenne - approximation Monte Carlo
+quantile(predc[2,], c(0.025, 0.975)) 
+# Intervalle de prédiction - approximation de Monte Carlo
+
+
+
+###############################
+#######  Exercice 4.7  ########
 ###############################
 
 # Données tirées de Bishop, Y. M. M. ; Fienberg, S. E. and Holland, P. W. (1975) 
@@ -161,7 +261,7 @@ deviance(cancer.m2) / cancer.m2$df.residual
 pchisq(deviance(cancer.m2), df = nrow(cancer) - length(coef(cancer.m2)), lower.tail = FALSE)
 
 ###############################
-#######  Exercice 4.6  ########
+#######  Exercice 4.8  ########
 ###############################
 data(fumeurs, package = "hecmodstat")
 fumeur.p.m0 <- glm(morts ~ offset(log(pop)), family = poisson, data = fumeurs)

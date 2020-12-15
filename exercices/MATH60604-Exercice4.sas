@@ -113,7 +113,122 @@ proc print data=valp;
 var valp;
 run;
 
+
+
 /* Exercice 4.5 */
+proc genmod data=modstat.socceragg;
+class domicile visiteur;
+model total= domicile visiteur / dist=poisson link=log;
+run;
+
+data valp;
+valp = 1-cdf("chisq", 43.8008, 36);
+run;
+
+proc print data=valp;
+var valp;
+run;
+
+
+proc genmod data=modstat.soccer;
+class equipe adversaire;
+model buts = equipe adversaire domicile / lrci type3 dist=poisson link=log;
+store model_store;
+run;
+
+data nouvpartie;
+length adversaire $25;
+length equipe $25;
+infile datalines delimiter=",";
+input  domicile equipe adversaire;
+datalines;
+1, Manchester United, Liverpool
+0, Liverpool, Manchester United
+;
+run;
+
+proc plm source=model_store;
+score data=nouvpartie out=pred pred=pred / ilink;
+run;
+
+proc print data=pred;
+var pred;
+run;
+proc genmod data=modstat.soccer;
+class equipe adversaire;
+model buts = equipe adversaire domicile domicile*equipe domicile*adversaire / type3 dist=poisson link=log;
+run;
+
+data valp;
+valp = 1-cdf("chisq", 2*(1082.6660-1058.7364), 720-682);
+run;
+
+proc print data=valp;
+var valp;
+run;
+
+/* Exercice 4.6 */
+data buch;
+set modstat.buchanan(keep=buch totmb popn);
+tot = buch + totmb;
+buchp = buch/(buch + totmb);
+lnpopn = log(popn);
+run;
+
+proc means data=buch;
+var buchp;
+run;
+
+proc means data=buch sum;
+var buch tot;
+run;
+
+proc sgplot data=buch;
+scatter x=lnpopn y=buchp;
+xaxis label="population du comté (log)";
+yaxis label="pourcentage des suffrages exprimés pour Buchanan";
+run;
+
+data buchanan;
+set modstat.buchanan;
+lnhisp = log(hisp);
+lncoll = log(coll);
+if(comte="Palm Beach") then bucha=.; else bucha=buch;
+lntotmb = log(totmb);
+run;
+
+proc genmod data=buchanan;
+model bucha = blanc lnhisp a65 dsec lncoll revenu / offset=lntotmb dist=pois link=log;
+run; 
+
+proc genmod data=buchanan;
+model bucha = blanc lnhisp a65 dsec lncoll revenu / offset=lntotmb dist=negbin link=log;
+store model_store;		
+run; 
+
+data valp;
+valp = (1-cdf("chisq", 2*(536.1785-328.8532), 1))/2;
+run;
+
+proc print data=valp;
+var valp;
+run;
+
+proc plm source=model_store;
+score data=buchanan out=preds pred=pred lclm=lower uclm=upper / ilink;
+run;
+
+data preds;
+set preds(where=(comte="Palm Beach"));
+keep comte pred lower upper;
+run;
+
+proc print data=preds;
+var comte pred lower upper;
+run;
+
+
+/* Exercice 4.7 */
 data cancer;
 set modstat.cancer;
 total = non + oui;
@@ -136,7 +251,7 @@ class age maligne;
 model oui/total = maligne / dist=binomial link=logit type1;
 run;
 
-/* Exercice 4.6 */
+/* Exercice 4.8 */
 
 data fumeurs;
 set modstat.fumeurs;

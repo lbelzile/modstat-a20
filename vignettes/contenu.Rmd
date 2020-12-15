@@ -31,7 +31,7 @@ Le contenu du cours est divisé en chapitres: des notes de cours, du code, des q
 
 ## Devoirs
 
-- Devoir 1, à remettre au plus tard le 19 octobre: [énoncé](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), [données `diamants`](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/diamants.sas7bdat), [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
+- [Devoir 2](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), à remettre au plus tard le 19 octobre: [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
 - [Devoir 2](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir2.pdf), à remettre au plus tard le 20 novembre
 - [Devoir 3](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir3.pdf), à remettre au plus tard le 11 décembre
 - [Projet](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604_projet.pdf), à remettre au plus tard le 16 décembre

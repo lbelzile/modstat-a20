@@ -8,8 +8,10 @@ proc phreg data=modstat.allaitement;
 model duree*censure(0) =  pauvrete fumeur scolarite agemere / ties=exact;
 run;
 
-/*  La statistique du log rang n'est pas identique, la faute aux doublons
-Même conclusion, statistiqus légèrement différentes */
+/*  La statistique du log rang n'est pas identique, la faute aux duplicatas
+La procédure lifetest utilise un ajustement différent (avec loi de référence hypergéométrique)
+La procédure phreg utilise quant à elle la loi khi-deux de référence
+Même conclusion, approximations différentes et références différentes */
 proc phreg data=modstat.allaitement;
 model duree*censure(0) = fumeur / ties=exact;
 run;
