@@ -71,6 +71,12 @@ run;
 
 proc genmod data=enfantsfiji;
 class res(ref="1") dur(ref="1") educ(ref="1");
+model nenfants = res dur educ / 
+	offset=lognfemmes dist=poisson link=log type3;
+run;
+
+proc genmod data=enfantsfiji;
+class res(ref="1") dur(ref="1") educ(ref="1");
 model nenfants = res dur educ dur*educ / 
 	offset=lognfemmes dist=poisson link=log type3;
 run;
