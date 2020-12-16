@@ -14,7 +14,7 @@ pchisq(lrt, df = 1, lower.tail = FALSE)
 wald <- (mle - 0.1)/se_mle
 pchisq(wald^2, df = 1, lower.tail = FALSE)
 
-# Exercice 3.4
+# Exercice 3.3
 logvrais <- function(y, beta, soldes){
 stopifnot(length(y) == length(soldes), length(beta) == 2L)
 sum(y*(beta[1] + beta[2]*soldes) - exp(beta[1] + beta[2]*soldes))

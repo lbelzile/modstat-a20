@@ -1,4 +1,4 @@
-/* Exercice 3.4 */
+/* Exercice 3.3 */
 data soldes;
 input nclient soldes;
 cards;
