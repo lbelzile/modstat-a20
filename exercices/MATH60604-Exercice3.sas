@@ -23,7 +23,7 @@ soldeso = log(5/4)*soldes;
 run;
 
 proc genmod data=soldes;
-model nclient= soldes / dist=poisson link=log;
+model nclient= soldes / dist=poisson link=log covb itprint;
 run;
 
 proc genmod  data=soldeso;
