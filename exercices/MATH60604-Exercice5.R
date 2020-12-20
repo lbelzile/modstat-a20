@@ -12,19 +12,19 @@ g1 <- ggplot(data = renergie,
        aes(y=pmoy, x = date, group = region, col = region)) + 
   geom_line() + 
   theme(legend.position = "none") + 
-  ylab("prix moyen au détail (dologvraisars CAD)")
+  ylab("prix moyen au détail (dollars CAD)")
 g2 <- ggplot(data = renergie, 
        aes(y=pmoy-pmin, x = date, group = region, col = region)) + 
   geom_line() + 
   theme(legend.position = "none") + 
-  ylab("marge de profit moyenne\n des détailogvraisants (dologvraisars CAD)")
+  ylab("marge de profit moyenne\n des détaillants (dollars CAD)")
 
 g1 + g2
 # Alternative à l'aide de la bibliothèque "xts" pour les séries chronologiques
 # Transformer de format long vers format court
 ren <- renergie
 ren$marg <- renergie$pmoy - ren$pmin
-ren$pmin <- NUlogvrais
+ren$pmin <- NULL
 ren <- tidyr::pivot_wider(data = ren, values_from = c("pmoy","marg"), names_from = region)
 par(mar = c(3,3,1,1), mfrow = c(1,2), bty = "l", pch = 20)
 plot(xts(x = ren[,19:35], order.by = ren$date), main =  "marge de profit moyenne")
@@ -67,10 +67,16 @@ anova(lm(mpre ~ groupe, data = baumann))
 modele1 <- lm(dpp ~ groupe, data = baumann)
 car::Anova(modele1, type = 3)
 modele2 <- lm(mpost ~ groupe + mpre, data = baumann)
-# Tests pour la significativité à l'aide des intervalogvraises de confiance
+# Tests pour la significativité à l'aide des intervalles de confiance
 confint(modele2)["mpre",]
+# On peut aussi obtenir la valeur-p du test beta_mpre=1
+# à l'aide de la statistique F (effet de type 3)
+# / Pour avoir beta_mpre=0, garder le décalage et ajouter mpre comme covariable
+car::Anova(lm(mpost ~ groupe + mpre, 
+              offset=mpre, data = baumann), type=3)[3,]
+TRV <- as.numeric(2*(logLik(modele2) - logLik(modele1)))
+pchisq(TRV, df = 1, lower.tail = FALSE)
 
-library(nlme)
 modele3 <- gls(score ~ groupe*test, 
               data = baumann_long,
               correlation = nlme::corSymm(form = ~ 1 | id))
@@ -84,7 +90,7 @@ anova(modele3, modele4)
 getVarCov(modele4)
 
 # On peut ajuster des paramètres différents dans chaque groupe
-# en partitionnant l'échantilogvraison en trois
+# en partitionnant l'échantillon en trois
 logvrais <- rep(0,3)
 for(i in 1:3){
   logvrais[i] <- logLik(gls(score ~ test,
