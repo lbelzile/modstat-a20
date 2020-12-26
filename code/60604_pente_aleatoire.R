@@ -1,13 +1,7 @@
-data(college, package = "hecmodstat")
-college <- college[order(college$echelon, college$sexe),]
-mod0 <- lme4::lmer(salaire ~ echelon + domaine + (1 |echelon) + annees +
-                     sexe, data = college)
-
-image(cov2cor(rescov(mod0, college)), 
-      sub = "", xlab = "", ylab = "")
-modb <- lm(salaire ~ domaine + sexe + annees +
-                   echelon, data = college)
 library(lme4)
+library(hecmodstat)
+
+## Exemple 1
 data(poussin, package = "hecmodstat")
 # Ajuster un modèle avec regime comme effet fixe
 # Effets aléatoires corrélés
@@ -25,41 +19,43 @@ anova(mod1, mod2)
 
 # Ajuster un modèle alternatif avec un effet aléatoire pour régime
 # les poussins est emboîté dans régime
+# 
+# Effet fixe ou aléatoire?
+# Avec des variables catégorielles, on doit enlever l'effet
+# fixe pour pouvoir estimer l'effet aléatoire
 mod3 <- lme4::lmer(masse ~ temps +
                      (1 + temps | regime:poussin) + 
                      (1 | regime),
                    data = poussin)
-
-# Fonction de StackOverflow pour créer un graphique de la matrice de covariance de Y
-# https://stackoverflow.com/questions/45650548/get-residual-variance-covariance-matrix-in-lme4/45655597#45655597
-rescov <- function(model, data) {
-  var.d <- crossprod(getME(model,"Lambdat"))
-  Zt <- getME(model,"Zt")
-  vr <- sigma(model)^2
-  var.b <- vr*(t(Zt) %*% var.d %*% Zt)
-  sI <- vr * Diagonal(nrow(data))
-  var.y <- var.b + sI
-  invisible(var.y)
-}
+# le modèle n'est pas ajustable - en cause, la corrélation négative
+# quasi-parfaite entre pente et ordonnée à l'origine
+rc3 <- rescov(mod3)
 # Imprimer la matrice de covariance du modèle multi-niveau (emboîtés)
-rc3 <- rescov(mod3, poussin)
+plot(rc3, corr = FALSE)
 # Graphique de la matrice de corrélation
-image(cov2cor(rc3), sub = "", xlab = "", ylab = "")
+plot(rc3, corr = TRUE)
 
-rc3 <- rescov(mod3, poussin[poussin$poussin == 38,])
-# Graphique de la matrice de corrélation
-image(cov2cor(rc3), sub = "", xlab = "", ylab = "")
+# Graphique de la matrice de corrélation intra-poussin
+p38 <- poussin$poussin == 38
+image(cov2cor(rc3$var_y[p38,p38]),
+      sub = "", xlab = "", ylab = "")
+
+library(nlme)
+mod0 <- nlme::lme(salaire ~ domaine + annees + sexe,
+                  random =~1 |echelon, 
+                  data = college, 
+                  correlation = varIdent(form=~1 | echelon))
 
 ### Deuxième exemple: données de mobilisation
 # Pourquoi ne faut-il pas mettre d'effet aléatoire sur 
 # des variables explicatives catégorielles comme "sexe"?
 data(mobilisation, package = "hecmodstat")
-mod1 <- lme4::lmer(mobilisation ~ anciennete + agegest + nunite + 
+mod5 <- lme4::lmer(mobilisation ~ anciennete + agegest + nunite + 
                      (1 | sexe) + (1 | idunite),
                    data = mobilisation)
 
 # Graphique de la matrice de corrélation
-image(cov2cor(rescov(mod1, mobilisation)), sub = "", xlab = "", ylab = "")
+plot(rescov(mod5), corr = TRUE)
 # On voit que la matrice de corrélation résultante est dense...
-# ces modèlesne sont pas ajustables en haute dimension
+# ces modèles ne sont pas ajustables en haute dimension
 # on crée de la corrélation inter-groupe
