@@ -13,13 +13,14 @@ vignette: >
 Le contenu du cours est divisé en chapitres: des notes de cours, du code, des questions à choix multiples et des exercices sont disponibles pour chaque sujet.
 
 - [Bases de l'inférence statistique](https://lbelzile.github.io/math60604/intro.html)
-- [Régression linéaire (partiel)](https://lbelzile.github.io/math60604/regression-lineaire.html)
+- [Régression linéaire (incomplet)](https://lbelzile.github.io/math60604/regression-lineaire.html)
 - [Régression linéaire (anglais)](https://lbelzile.github.io/math60604a/linear-regression.html)
-- [Modèles linéaires généralisés (anglais)](https://lbelzile.github.io/math60604a/generalized-linear-models.html)
-- [Données corrélées et longitudinales (anglais)](https://lbelzile.github.io/math60604a/correlated-longitudinal-data.html)
-- [Modèles linéaires mixtes (anglais)](https://lbelzile.github.io/math60604a/linear-mixed-models.html)
-- [Analyse de survie (anglais)](https://lbelzile.github.io/math60604a/survival.html)
 - [Vraisemblance (anglais)](https://lbelzile.github.io/math60604a/likelihood.html)
+- [Modèles linéaires généralisés (anglais)](https://lbelzile.github.io/math60604a/generalized-linear-models.html)
+- [Données corrélées et longitudinales (incomplet)](https://lbelzile.github.io/math60604/donnees-correlees-longitudinales.html)
+- [Modèles linéaires mixtes (incomplet)](https://lbelzile.github.io/math60604/modeles-lineaires-mixtes.html)
+<!-- - [Analyse de survie (anglais)](https://lbelzile.github.io/math60604a/survival.html) -->
+
 
 <!-- - [Modèles linéaires généralisés](https://lbelzile.github.io/math60604/modeles-lineaires-generalises.html) -->
 <!-- - [Données corrélées et longitudinales](https://lbelzile.github.io/math60604/donnees-correlees-longitudinales.html) -->
@@ -31,10 +32,6 @@ Le contenu du cours est divisé en chapitres: des notes de cours, du code, des q
 
 ## Devoirs
 
-- [Devoir 1](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir1.pdf), à remettre au plus tard le 19 octobre: [code `puissance.sas`](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/puissance.sas)
-- [Devoir 2](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir2.pdf), à remettre au plus tard le 20 novembre
-- [Devoir 3](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604-Devoir3.pdf), à remettre au plus tard le 11 décembre
-- [Projet](https://raw.githubusercontent.com/lbelzile/modstat/master/devoirs/MATH60604_projet.pdf), à remettre au plus tard le 16 décembre
 
 ---
 
@@ -70,6 +67,7 @@ Pour ouvrir un quiz dans votre navigateur, tapez un des commandes suivantes dans
 ```{r eval = FALSE}
 learnr::run_tutorial("intro", package = "hecmodstat")
 learnr::run_tutorial("vraisemblance", package = "hecmodstat")
+learnr::run_tutorial("survie", package = "hecmodstat")
 ```
 
 
