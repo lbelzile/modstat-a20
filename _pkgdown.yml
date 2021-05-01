@@ -28,7 +28,7 @@ navbar:
   - text: Contributeurs
     href: articles/equipe.html
   right:
-  - icon: fa-github
+  - icon: "fab fa-github"
     href: https://github.com/lbelzile/modstat
 
 
