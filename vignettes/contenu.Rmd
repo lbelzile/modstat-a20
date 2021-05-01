@@ -44,8 +44,9 @@ knitr::kable(exdat, row.names = TRUE, align = "lcccc")
 
 ## Données
 
-Si vous accédez à **SAS** onDemand, vous pouvez charger les données à l'aide de 
+Si vous accédez à **SAS** onDemand, vous pouvez accéder aux données à l'aide des instructions suivantes: 
 ```{sas loadintro, eval = FALSE}
+OPTIONS LOCALE=fr_CA DFLANG=LOCALE;
 LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;
 ```
 
