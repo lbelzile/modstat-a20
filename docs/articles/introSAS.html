@@ -87,7 +87,7 @@
 
       
 
-      </header><script src="introSAS_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
+      </header><script src="introSAS_files/header-attrs-2.9/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Introduction à SAS</h1>
@@ -112,27 +112,23 @@
 <li>Soumettez le formulaire.</li>
 <li>Confirmez le choix du cours et terminez l’inscription pour Studio</li>
 </ul>
-<p>Pour accéder aux données du cours, utilisez l’énoncé:</p>
-<p><code>LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;</code></p>
-<div id="sas-ondemand-for-academics" class="section level3">
-<h3 class="hasAnchor">
-<a href="#sas-ondemand-for-academics" class="anchor"></a>SAS® OnDemand for Academics</h3>
-<p>Écrivez-moi pour les détails. <!-- | Détails sur le cours | | --> <!-- |:----|:----| --> <!-- | Nom du cours: |  MATH 60604| --> <!-- |Niveau:| Graduate | --> <!-- |Institution:| HEC Montreal| --> <!-- | Code du cours: | `50a343b3-1e64-47e1-99f6-b4fd666fd0be`| --> <!-- |Description:| Modélisation statistique| --></p>
-</div>
-</div>
-<div id="logiciel-et-installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#logiciel-et-installation" class="anchor"></a>Logiciel et Installation</h2>
-<p>Nous utiliserons uniquement les modules SAS/BASE et SAS/STAT. Si vous désirez installer <strong>SAS</strong> sur votre ordinateur plutôt que d’utiliser la version serveur, deux options s’offrent à vous.</p>
-<p>Je vous recommande d’installer <a href="https://www.sas.com/en_us/software/university-edition.html">SAS University Edition (<strong>SAS UE</strong>)</a>, qui est gratuit. Vous accédez au logiciel depuis un navigateur web et la langue de ce dernier détermine celle de <strong>SAS UE</strong>. Si vous avez un Mac, utiliser ce dernier vous évitera d’installer Windows 10 sur une machine virtuelle (solution broche à foin s’il en est une). Notez que ce logiciel est discontinué et ne sera plus disponible à partir de juillet 2021.</p>
-<p>La licence institutionnelle du logiciel <strong>SAS</strong> offert par les TIs est gratuite, mais ces derniers vous font payer le téléchargement. Vous pouvez partager cette dernière avec vos camarades. Si vous avez déjà acheté le logiciel par le passé, vous avez droit aux mises à jour gratuites. Le logiciel est disponible tant que vous êtes étudiant(e)s à HEC.</p>
+<p>Si vous accédez à <strong>SAS</strong> onDemand, vous pouvez créer la bibliothèque contenant toutes les données utilisées en classe en mode lecture seule automatiquement en modifiant le fichier <code>autoexec</code> à l’aide de la commande suivante: <code>LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;</code></p>
+<p><img src="../images/SASonDemand_autoexec.png" alt="Localisation du fichier autoexec"><img src="../images/SASonDemand_autoexec_2.png" alt="Modifications du fichier autoexec"></p>
 </div>
 <div id="introduction-à-sas" class="section level2">
 <h2 class="hasAnchor">
 <a href="#introduction-%C3%A0-sas" class="anchor"></a>Introduction à <strong>SAS</strong>
 </h2>
-<p>Si vous accédez à <strong>SAS</strong> onDemand, vous pouvez charger les données à l’aide de</p>
+<p>Répétez les instructions précédentes, cette fois en ajoutant la bibliothèque suivante:</p>
 <pre class="sas"><code>LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;</code></pre>
+<p>Vous pouvez également télécharger les données (<a href="https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/Intro_SAS_data.zip">fichier <code>.zip</code></a>) et créer votre propre bibliothèque. Pour ce faire, créez un dossier contenant les bases de données (extension <code>.sas7bdat</code>) et utilisez les commandes suivantes:</p>
+<div class="figure">
+<img src="../images/SASonDemand_nouvelle_biblio.png" alt=""><p class="caption">Création d’une nouvelle bibliothèque</p>
+</div>
+<div class="figure">
+<img src="../images/SASonDemand_nouvelle_biblio_2.png" alt=""><p class="caption">Sélection du répertoire</p>
+</div>
+<p>Les liens qui suivent contiennent une capsule vidéo avec une narration des diapositives, le code SAS utilisé dans les exemples ainsi que quelques exercices (le code SAS rattaché aux exercices contient les solutions annotées, mais je vous enjoins à essayer par vous même avant de les consulter).</p>
 <ul>
 <li><a href="https://hecmontreal.yuja.com/V/Video?v=87013&amp;node=440149&amp;a=311352596&amp;autoplay=1">Capsule vidéo (mot de passe: sas)</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SAS_intro.pdf">Diapositives</a></li>
@@ -141,6 +137,11 @@
 <li><a href="https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/MATH60619_SASexercices.sas">Exercices (code SAS)</a></li>
 <li><a href="https://raw.githubusercontent.com/lbelzile/modstat/master/introSAS/Intro_SAS_data.zip">Jeux de données (zip)</a></li>
 </ul>
+</div>
+<div id="installation-du-logiciel" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation-du-logiciel" class="anchor"></a>Installation du logiciel</h2>
+<p>Nous utiliserons uniquement les modules SAS/BASE et SAS/STAT. Si vous désirez installer <strong>SAS</strong> sur votre ordinateur (uniquement pour Windows) plutôt que d’utiliser la version serveur, vous pouvez télécharger et installer le logiciel: la licence institutionnelle offerte par les TIs est gratuite, mais ces derniers vous font payer le téléchargement. Vous pouvez partager cette dernière avec vos camarades. Si vous avez déjà acheté le logiciel par le passé, vous avez droit aux mises à jour gratuites. Le logiciel est disponible tant que vous êtes étudiant(e)s à HEC.</p>
 </div>
   </div>
 

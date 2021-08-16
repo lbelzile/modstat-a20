@@ -1,4 +1,4 @@
-pandoc: '2.13'
+pandoc: 2.14.1
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
@@ -6,7 +6,7 @@ articles:
   equipe: equipe.html
   introSAS: introSAS.html
   plandetailleseance: plandetailleseance.html
-last_built: 2021-05-01T15:26Z
+last_built: 2021-08-16T16:05Z
 urls:
   reference: https://lbelzile.github.io/modstat/reference
   article: https://lbelzile.github.io/modstat/articles
