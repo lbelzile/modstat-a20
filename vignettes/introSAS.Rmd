@@ -20,7 +20,7 @@ Après avoir créé un compte utilisateur, suivez ces étapes:
 - Soumettez le formulaire.
 - Confirmez le choix du cours et terminez l'inscription pour Studio
 
-Si vous accédez à **SAS** onDemand, vous pouvez créer la bibliothèque contenant toutes les données utilisées en classe en mode lecture seule automatiquement en modifiant le fichier `autoexec` à l'aide de la commande suivante: `LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;`
+Si vous accédez à **SAS** onDemand, vous pouvez créer la bibliothèque contenant toutes les données utilisées en classe en mode lecture seule automatiquement en ajoutant la ligne suivante au fichier `autoexec`: `LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;`
 
 
 ![Localisation du fichier `autoexec`](../images/SASonDemand_autoexec.png)

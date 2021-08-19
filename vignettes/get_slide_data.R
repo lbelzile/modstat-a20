@@ -56,14 +56,26 @@ ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
 codedir <- "../code"
 
-slides <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "*.html")
-slides <- slides[substr(slides, 1, 11) == "MATH60604_d"]
+get_github_list <- function(user, repo, pattern){
+  req <- httr::GET(paste0("https://api.github.com/repos/", user, "/", repo, "/git/trees/master?recursive=1"))
+  httr::stop_for_status(req)
+  filelist <- unlist(lapply(httr::content(req)$tree,
+                            "[", "path"), 
+                     use.names = FALSE)
+  grep(x = filelist, value = TRUE, pattern = pattern)
+}
+
+
+slides <- get_github_list(user = "lbelzile", 
+                          repo = "MATH60604-diapos",
+                          pattern = "MATH60604_d.*\\.html")
 sl <- rep("", ns)
 pmasl <- na.omit(pmatch(substr(slides, start = 12, stop = 13), index))
 sl[pmasl] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-desktop fa-lg'></i></span>](",url, slides,")")
 
-
-slidespdf <- list.files(path = "/home/lbelzile/Documents/Dropbox/website/MATH60604-diapos", pattern = "MATH60604_d.*.pdf")
+slidespdf <- get_github_list(user = "lbelzile", 
+                             repo = "MATH60604-diapos",
+                             pattern = "MATH60604_d.*.pdf")
 slpdf <- rep("", ns)
 pmaslp <- na.omit(pmatch(substr(slidespdf, start = 12, stop = 13),index))
 slpdf[pmaslp] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](",url, slidespdf,")")
