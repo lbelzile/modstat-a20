@@ -2,7 +2,7 @@ library(hecmodstat)
 
 # Ajuster le modèle linéaire avec "lm"
 # Tableau des estimés des coefficients avec "summary"
-# Tableau des statistiques F (SS3) avec "Anova" du paquetage "car" 
+# Tableau des statistiques F (SS3) avec "Anova" du paquet "car" 
 # Détails sur les différentes paramétrisations https://mcfromnz.wordpress.com/2011/03/02/anova-type-iiiiii-ss-explained/
 ols <- lm(intention ~ fixation, data = intention)
 summary(ols) # 

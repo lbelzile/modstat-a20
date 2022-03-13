@@ -1,4 +1,4 @@
-# Les deux paquetages suivants sont les plus fréquemment employés pour ajuster des modèles mixtes
+# Les deux paquets suivants sont les plus fréquemment employés pour ajuster des modèles mixtes
 library(lme4) #modèles linéaires généralisés mixtes - plus moderne, mieux maintenu et permet d'ajuster des données de grandes tailles
 library(nlme) #modèles linéaires mixtes - avec matrices de covariance différentes de l'identité pour les aléas
 data(vengeance, package = "hecmodstat")

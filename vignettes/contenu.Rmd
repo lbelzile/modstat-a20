@@ -52,15 +52,15 @@ LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;
 
 Les jeux de données (en format `.sas7bdat`) sont disponibles pour [téléchargement en cliquant sur ce lien](https://raw.githubusercontent.com/lbelzile/modstat/master/datasets/MATH60604_SAS_donnees.zip).
 
-Vous pouvez également accéder aux bases de données dans **R** en installant le paquetage **R** `hecmodstat`
+Vous pouvez également accéder aux bases de données dans **R** en installant le paquet **R** `hecmodstat`
 
-Vous pouvez installer le paquetage à partir de Github à l'aide des commandes suivantes en roulant les commandes suivantes dans **R** (décommentez la première ligne pour installer les bibliothèques `learnr` et `remotes`):
+Vous pouvez installer le paquet à partir de Github à l'aide des commandes suivantes en roulant les commandes suivantes dans **R** (décommentez la première ligne pour installer les bibliothèques `learnr` et `remotes`):
 ```{r, eval = FALSE}
 #install.packages(c("learnr","remotes"))
 remotes::install_github("lbelzile/hecmodstat")
 ```
 
-*Note*: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquetage pour bénéficier des dernières fonctionnalités.
+*Note*: plusieurs bases de données ne sont pas documentées et les tutoriels ne sont pas encore complétés. Je vous invite à réinstaller périodiquement le paquet pour bénéficier des dernières fonctionnalités.
 
 ## Quiz
 
