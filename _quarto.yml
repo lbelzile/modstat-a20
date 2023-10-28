@@ -2,17 +2,8 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!slides/"
   resources:
     - "files/"
-    - "slides/*.html"
-    - "slides/*.pdf"
-    - "slides/img/"
-    - "slides/figures/"
-    - "slides/libs/"
-    - "slides/css/"
-    - "slides/*_files/"
-    - "evaluations/*.pdf"
 
 
 # See https://quarto.org/docs/projects/code-execution.html#freeze
@@ -20,11 +11,11 @@ execute:
   freeze: auto  # Re-render only when source changes
 
 
-toc-title: "Table of content"
+toc-title: "Table des matières"
 website:
-  title: "Statistical modelling"
-  site-url: "https://lbelzile.github.io/statmod"
-  description: "The objective of this course is to provide students with the basics of statistical inference, as well as statistical tools for data modeling in a regression framework. The theory behind the statistical models will be reviewed with an emphasis on data applications in management."
+  title: "Modélisation statistique"
+  site-url: "https://lbelzile.github.io/modstat"
+  description: "Ce cours aborde notamment les modèles linéaires, les modèles linéaires généralisés et la régression pour données longitudinales avec effets aléatoires et structures de corrélation. Pour chacune de ces méthodes, les principes théoriques de l’inférence, tels que les tests d’hypothèse, statistiques de tests et méthodes d’estimation seront abordés avec rigueur. Une attention particulière sera aussi portée aux applications en gestion à l’aide du logiciel SAS."
 
   navbar:
     pinned: true
@@ -32,77 +23,73 @@ website:
     foreground: "#ffffff"
     right:
       - text: "Syllabus"
-        file: "/files/syllabus/MATH60604A-F20-Syllabus.pdf"
-      - text: "Content"
-        file: content/index.qmd
-      - text: "Evaluations"
+        file: "/files/syllabus/MATH60604-A20-Syllabus.pdf"
+      - text: "Contenu"
+        file: contenu/index.qmd
+      - text: "Évaluations"
         file: evaluations/index.qmd
-      - text: "Exercises"
-        file: exercises/index.qmd
+      - text: "Exercices"
+        file: exercices/index.qmd
       - text: "Notes"
         href: "https://lbelzile.github.io/math60604a"
-      - icon: comment
-        href: "https://piazza.com/class/kcnzklt9pyj15y"
-        aria-label: Piazza
 
 
   sidebar:
-    - title: "Content"
+    - title: "Contenu"
       style: "docked"
       search: false
       foreground: "#002855"
       contents:
         - text: "Ressources"
-          file: content/index.qmd
-        - section: "Programming"
+          file: contenu/index.qmd
+        - section: "Programmation"
           contents:
-            - text: "Introduction to **SAS**"
-              file: content/sas.qmd
-        - text: "Learning objectives"
-          file:  "/files/syllabus/MATH60604A_courseobjectives.pdf"
-        - section: "Pedagogical content"
+            - text: "Introduction à **SAS**"
+              file: contenu/sas.qmd
+        - text: "Objectifs d'apprentissage"
+          file:  "/files/syllabus/MATH60604_objectifscours.pdf"
+        - section: "Contenu"
           contents:
-            - text: "Week 1"
-              file: content/01-content.qmd
-            - text: "Week 2"
-              file: content/02-content.qmd
-            - text: "Week 3"
-              file: content/03-content.qmd
-            - text: "Week 4"
-              file: content/04-content.qmd
-            - text: "Week 5"
-              file: content/05-content.qmd
-            - text: "Week 6"
-              file: content/06-content.qmd
-            - text: "Week 7"
-              file: content/07-content.qmd
-            - text: "Week 8"
-              file: content/08-content.qmd
-            - text: "Week 9"
-              file: content/09-content.qmd
-            - text: "Week 10"
-              file: content/10-content.qmd
-            - text: "Week 11"
-              file: content/11-content.qmd
-            - text: "Week 12"
-              file: content/12-content.qmd
-            - text: "Week 13"
-              file: content/13-content.qmd
-    - title: "Evaluations"
+            - text: "Semaine 1"
+              file: contenu/01-content.qmd
+            - text: "Semaine 2"
+              file: contenu/02-content.qmd
+            - text: "Semaine 3"
+              file: contenu/03-content.qmd
+            - text: "Semaine 4"
+              file: contenu/04-content.qmd
+            - text: "Semaine 5"
+              file: contenu/05-content.qmd
+            - text: "Semaine 6"
+              file: contenu/06-content.qmd
+            - text: "Semaine 7"
+              file: contenu/07-content.qmd
+            - text: "Semaine 8"
+              file: contenu/08-content.qmd
+            - text: "Semaine 9"
+              file: contenu/09-content.qmd
+            - text: "Semaine 10"
+              file: contenu/10-content.qmd
+            - text: "Semaine 11"
+              file: contenu/11-content.qmd
+            - text: "Semaine 12"
+              file: contenu/12-content.qmd
+            - text: "Semaine 13"
+              file: contenu/13-content.qmd
+    - title: "Évaluations"
       file: evaluations/index.qmd
-    - title: "Exercises"
-      file: exercises/index.qmd
+    - title: "Exercices"
+      file: exercices/index.qmd
 
   page-footer:
     left: |
-      Content {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}})<br>
-      Website template by [Dr. Andrew Heiss](https://www.andrewheiss.com/) under [MIT License](https://mit-license.org/)<br>
-      All content licensed under a {{< fa brands creative-commons >}}
+      Contenu {{< fa brands creative-commons >}} {{< var course.copyright_year >}} par [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}); canevas du site par [Dr. Andrew Heiss](https://www.andrewheiss.com/) sous [licence MIT](https://mit-license.org/) <br>
+      Tout le contenu du site (hors notes) est distribué sous licence {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
-      [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
+      [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
     right: |
-      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
-      [View the source at {{< fa brands github >}} GitHub]({{< var course.github >}})
+      Fabriqué avec {{< fa brands r-project >}} et [Quarto](https://quarto.org/)<br>
+      [Code source sur {{< fa brands github >}} GitHub]({{< var course.github >}})
 
 preview:
   port: 6200

@@ -1,61 +1,60 @@
-index <- c("0_","1a","1b","1c", 
-           paste0(2,letters[1:9]), 
-           "3_", paste0(4,letters[1:8]),
+index <- c("0_","1a","1b","1c",
+           paste0(2, letters[1:9]),"3_", 
+           paste0(4, letters[1:8]),
            paste0(5, letters[1:8]),
            paste0(6, letters[1:6]),
            paste0(7, letters[1:5]))
-index0 <- c("0","1a","1b","1c", 
-            paste0(2,letters[1:9]), 
-            "3", paste0(4,letters[1:8]),
+index0 <- c("0","1a","1b","1c",
+            paste0(2, letters[1:9]),"3", 
+            paste0(4, letters[1:8]),
             paste0(5, letters[1:8]),
             paste0(6, letters[1:6]),
             paste0(7, letters[1:5]))
-names <- c("Course Outline",
-           "Hypothesis Tests",
-           "Central Limit Theorem",
-           "Exploratory Data Analysis",
-           "Parameter interpretation",
-           "Linear transformations",
-           "Geometry of least squares",
-           "Hypothesis tests",
-           "Coefficient of determination",
-           "Predictions",
+names <- c("Plan de cours",
+           "Tests d'hypothèses",
+           "Théorème central limite",
+           "Analyse exploratoire",
+           "Interprétation des paramètres  (modèle linéaire)",
+           "Transformations linéaires",
+           "Géométrie des moindres carrés",
+           "Tests d'hypothèses (modèle linéaire)",
+           "Coefficient de détermination",
+           "Prédictions",
            "Interactions",
-           "Collinearity",
-           "Diagnostic plots",
-           "Likelihood-based inference",
-           "Generalized linear models",
-           "Logistic regression",
-           "Example of logistic regression",
-           "Poisson regression",
-           "Contingency tables",
-           "Overdispersion",
-           "Rates and offsets",
-           "Logistic model for proportions",
-           "Introduction to correlated data",
-           "Example of longitudinal data",
-           "Model formulation",
-           "Compound symmetry covariance",
-           "Autoregressive covariance",
-           "Other covariance models",
-           "Selection of covariance structures",
-           "Group heteroscedasticity",
-           "Group effects",
-           "Clustered data example",
-           "Random effects",
-           "Random intercept",
-           "Random slope",
-           "Prediction for mixed models",
-           "Survival analysis and censoring",
-           "Likelihood for survival data",
-           "Kaplan-Meier estimator",
-           "Cox proportional hazard model",
-           "Log rank test"
+           "Colinéarité",
+           "Diagnostics graphiques des résidus",
+           "Vraisemblance",
+           "Modèles linéaires généralisés",
+           "Régression logistique",
+           "Exemple de régression logistique",
+           "Régression de Poisson",
+           "Tableaux de contingence",
+           "Surdispersion",
+           "Taux et décalage",
+           "Régression logistique pour les taux",
+           "Introduction aux données corrélées",
+           "Exemple de données longitudinales",
+           "Formulation de modèles",
+           "Structure d'équicorrélation",
+           "Structure autorégressive",
+           "Autres modèles de covariance",
+           "Comparaison des modèles de covariance",
+           "Hétéroscédasticité de groupe",
+           "Effet groupe pour la moyenne",
+           "Exemple de données corrélées",
+           "Modèles linéaires mixtes",
+           "Ordonnée à l'origine aléatoire",
+           "Pente aléatoire",
+           "Prédictions de modèles mixtes",
+           "Concepts d'analyse de survie",
+           "Survie et vraisemblance",
+           "Estimateur de Kaplan-Meier",
+           "Modèle à risques proportionnels de Cox",
+           "Test du log rang"
            )
 ns <- length(index)
-url <- "https://lbelzile.github.io/MATH60604A-slides/"
-codedir <- "../files/code"
-
+url <- "https://lbelzile.github.io/MATH60604-diapos/"
+codedir <- "../code"
 
 get_github_list <- function(user, repo, pattern){
   req <- httr::GET(paste0("https://api.github.com/repos/", user, "/", repo, "/git/trees/main?recursive=1"))
@@ -68,84 +67,85 @@ get_github_list <- function(user, repo, pattern){
 
 
 slides <- get_github_list(user = "lbelzile", 
-                          repo = "MATH60604A-slides",
-                          pattern = "MATH60604A_w.*\\.html")
+                          repo = "MATH60604-diapos",
+                          pattern = "MATH60604_d.*\\.html")
 sl <- rep("", ns)
-pmasl <- na.omit(pmatch(substr(slides, start = 13, stop = 14), index))
+pmasl <- na.omit(pmatch(substr(slides, start = 12, stop = 13), index))
 sl[pmasl] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-desktop fa-lg'></i></span>](",url, slides,")")
 
 slidespdf <- get_github_list(user = "lbelzile", 
-                             repo = "MATH60604A-slides",
-                             pattern = "MATH60604A_w.*.pdf")
+                             repo = "MATH60604-diapos",
+                             pattern = "MATH60604_d.*.pdf")
 slpdf <- rep("", ns)
-pmaslp <- na.omit(pmatch(substr(slidespdf, start = 13, stop = 14), index))
-slpdf[pmaslp] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](",url, slidespdf,")")[1:ns]
+pmaslp <- na.omit(pmatch(substr(slidespdf, start = 12, stop = 13),index))
+slpdf[pmaslp] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](",url, slidespdf,")")
 
 
 
-video <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](", 
-          c("https://youtu.be/luOkCcpDSjs",
-            "https://youtu.be/TSMuEX8FqYo",
-            "https://youtu.be/nCUT05szKwQ",
-            "https://youtu.be/5Yc46pAQpFk",
-            "https://youtu.be/4jOnZrnPlUM",
-            "https://youtu.be/MzmS9r-77lI",
-            "https://youtu.be/F9dR6mpOVtI",
-            "https://youtu.be/PatlZ9mlVuk",
-            "https://youtu.be/3rVrZDReDCk",
-            "https://youtu.be/AubAJT6fSHs",
-            "https://youtu.be/dtpJ3pn_GmQ",
-            "https://youtu.be/ENOVNBOdl6E",
-            "https://youtu.be/iqfr_VK520M",
-            "https://youtu.be/IO3et3Uk4mQ",
-            "https://youtu.be/Ru9OXJTsToY", #4a
-            "https://youtu.be/MabdSIYexmg", #4b
-            "https://youtu.be/oGFsv1eBl6Y", #4c
-            "https://youtu.be/ErqXeY4nGgk", #4d
-            "https://youtu.be/1-F5vPk7_78", #4e
-            "https://youtu.be/c5oQOIPBAeU", #4f
-            "https://youtu.be/FLSAaWpHQso", #4g
-            "https://youtu.be/pqkjnA708c8", #4h
-            "https://youtu.be/2LRzsxZPatQ", #5a
-            "https://youtu.be/MC1_W2G6Pos", #5b
-            "https://youtu.be/bl0hI-YSWDQ", #5c
-            "https://youtu.be/rhXjdr8vYzE", #5d
-            "https://youtu.be/0o2p3lLUtBo", #5e
-            "https://youtu.be/0-QR5EYnkGg", #5f
-            "https://youtu.be/_LDX9RnF7A0", #5g
-            "https://youtu.be/K2xJy2J6-ws", #5h
-            "https://youtu.be/CVpRY1LYwU8", #6a
-            "https://youtu.be/4yXP8B9mYzQ", #6b
-            "https://youtu.be/HLYSs2lxFj8", #6c
-            "https://youtu.be/oCuZajuIymk", #6d
-            "https://youtu.be/IAzgrldsY48", #6e
-            "https://youtu.be/-56kPe2FPwE", #6f
-            "https://youtu.be/zs1LrAyHcco", #7a
-            "https://youtu.be/-iQKIhUi65U", #7b
-            "https://youtu.be/gpJY8JQhn6A", #7c
-            "https://youtu.be/k6IUg3n0tiw", #7d
-            "https://youtu.be/FK6Zr0MwhPs" #7e 
-           ), ")")
+video <- c("https://youtu.be/kC5S4h0bIaw", 
+           "https://youtu.be/6Qe4mi6A9bU", 
+           "https://youtu.be/a2cpzb1EzGk",
+           "https://youtu.be/2vK0zEX6dSA",
+           "https://youtu.be/-R-5muz1mGY",
+           "https://youtu.be/4xczymEfVng",
+           "https://youtu.be/2iKH0tBb6w4",
+           "https://youtu.be/EjSlJJ5CUJY", #tests 2d
+           "https://youtu.be/QtfhZCMHVAo", #correlation 2e
+           "https://youtu.be/GZx7_5tmzCg", # prédictions 2f
+           "https://youtu.be/0UrxG4hkDcg", #interactions 2g
+           "https://youtu.be/6RxdcERzdFo", # colinearite 2h
+           "https://youtu.be/AZ6Rr1B_r7c", # diagnostics 2i
+           "https://youtu.be/VJItA6EX5-s", #vraisemblance 3
+           "https://youtu.be/YUp6IZbrwQ0", #4a glm
+           "https://youtu.be/r_1NfKdqy5M", #4b logistique
+           "https://youtu.be/S6gXUa-9zvE", #4c logistique exemple
+           "https://youtu.be/sjt9lKLQbZ8", #4d poisson
+           "https://youtu.be/oNDi1Bel84g", #4e tableaux de contingence
+           "https://youtu.be/YS7UE9N4HMc", #4f surdispersion
+           "https://youtu.be/Hl2c48rX98g", #4g taux et décalage
+           "https://youtu.be/6a8aoXy8Ag0", #4h régression logistique pour taux
+           "https://youtu.be/ytwbRVTXAfc", #5a
+           "https://youtu.be/X2aWOAwi3s8", #5b
+           "https://youtu.be/dep7O7jZEqw", #5c
+           "https://youtu.be/150FoT7b4TM", #5d
+           "https://youtu.be/luy5E-thK_s", #5e
+           "https://youtu.be/owY9s0HINYg", #5f
+           "https://youtu.be/3dJ_u-Svr6Y", #5g
+           "https://youtu.be/3S0GQ7FJfn0", #5h
+           "https://youtu.be/7X09JMf_HtY", #6a
+           "https://youtu.be/lpQSuZmmuH0", #6b
+           "https://youtu.be/A-YotBQLd5Q", #6c
+           "https://youtu.be/kPbguCg05e0", #6d
+           "https://youtu.be/lnNfzyKGglA", #6e
+           "https://youtu.be/V6-xQXuMTzo", #6f
+           "https://youtu.be/YZbgs4aj_Bg", #7a
+           "https://youtu.be/S_WjH5u4SC8", #7b
+           "https://youtu.be/iWNid5x4BKE", #7c
+           "https://youtu.be/d5wRThO3lLA", #7d
+           "https://youtu.be/yuSZNBt8Pxk"
+           )
+videosl <- paste0("[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](",video,")")
 if(length(names) - length(video) > 0){
-  video <- c(video, rep("", length(names) - length(video)))
+  videosl <- c(videosl, rep("", length(names) - length(video)))
 }
-linkgithub <- "https://raw.githubusercontent.com/lbelzile/statmod/main/"
+linkgithub <- "https://raw.githubusercontent.com/lbelzile/modstat/main/files/"
 
-codesas <- list.files(path = codedir, pattern = "MATH60604A.*.sas")
+
+codesas <- list.files(path = codedir, pattern = "MATH60604.*.sas")
 codestr <- rep("", ns)
-nid <- sapply(substr(codesas,12,13), function(x){which(x == index)})
+nid <- na.omit(pmatch(substr(codesas,11,12), index))
 codestr[nid] <- paste0("[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](",linkgithub, "code/", codesas,")")
 
-codeR <- list.files(path = codedir, pattern = "MATH60604A.*.R")
+codeR <- list.files(path = codedir, pattern = "MATH60604.*.R")
 codeRstr <- rep("", ns)
-nid <- sapply(substr(codeR,12,13), function(x){pmatch(x, index)})
+nid <- na.omit(pmatch(substr(codeR,11,12), index))
 codeRstr[nid] <- paste0("[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](",linkgithub,"code/", codeR,")")
 
 
 sldat <- data.frame('S' = index0, 
-                    Content = names,
-                    Slides = sl,
-                    PDF = slpdf,
-                    Videos =  video,
-                    SAS = codestr,
-                    R = codeRstr)
+                    Contenu = names,
+                    HTML = sl,
+                    Diapos = slpdf,
+                    Vidéos = videosl,
+                    "SAS" = codestr,
+                    "R" = codeRstr)

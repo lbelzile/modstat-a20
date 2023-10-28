@@ -8,14 +8,14 @@ instructor:
   github: lbelzile
   office: "Zoom"
   contact_policy: >
-    I am best reached by email
+    Merci de me contacter par courriel ou via [Piazza](https://piazza.com/class/kcnzjx356xqw8).
 course:
-  number: "MATH 60604A"
-  semester: "Fall 2020"
-  days: "Wednesday"
-  time: "15:30–18:30"
+  number: "MATH 60604"
+  semester: "automne 2020"
+  days: "lundi"
+  time: "8:30–11:30"
   location: "Zoom"
-  github: "https://www.github.com/lbelzile/statmod"
+  github: "https://www.github.com/lbelzile/modstat"
   copyright_year: "2020"
 
 university:

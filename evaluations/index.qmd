@@ -1,15 +1,13 @@
 ---
-title: "Evaluations"
+title: "Évaluations"
 ---
 
-Your grade will be based on
+- [Devoir 1](../files/evaluations/MATH60604-Devoir1.pdf), comptant pour 15% de la note finale, à remettre au plus tard le 19 octobre.
+- [Devoir 2](../files/evaluations/MATH60604-Devoir2.pdf), comptant pour 15% de la note finale, à remettre au plus tard le 16 novembre.
+- [Devoir 3](../files/evaluations/MATH60604-Devoir3.pdf), comptant pour 15% de la note finale, à remettre au plus tard le 11 décembre.
+- [Projet](../files/evaluations/MATH60604-projet.pdf) (équipes de trois ou quatre), comptant pour 25% de la note final, à remettre au plus tard le mercredi 16
+décembre.
+- Examen final récapitulatif (individuel), comptant pour 30% de la note finale.
 
-- [Assignment 1](../files/evaluations/MATH60604A-Assignment1.pdf) with [SAS script](../files/evaluations/power.sas), worth 15% and due October 19th. 
-- [Assignment 2](../files/evaluations/MATH60604A-Assignment2.pdf), worth 15% and due November 11th.
-- [Assignment 3](../files/evaluations/MATH60604A-Assignment3.pdf), worth 15% and due December 2nd.
-- [Data analysis project](../files/evaluations/MATH60604A_project.pdf) (in teams of three or four people), worth 25%, due Wednesday, December 16th.
-- Final examination (individual), worth 30% of the final grade.
 
-
-Team work counts toward your final grade only if you obtain more than 50% on the individual evaluations. Otherwise,
-the final grade is calculated on a pro rata basis using only individual evaluations
+La note obtenue lors des travaux d'équipe contribue à la note globale seulement si la note combinée des évaluations individuelles est supérieure à 50%. Autrement, la note finale de l'étudiant(e) est calculée au pro rata des évaluations individuelles
