@@ -19,6 +19,6 @@ knitr::kable(sldat[which(sldat$S %in% c("6e","6f")),-3], align = "llccccc", row.
   - effets fixes versus aléatoires
   - REML
   - moyenne conditionnelle versus marginale
-- [Démontration de la procédure `mixed` (données `masseporc`)](https://raw.githubusercontent.com/lbelzile/modstat/master/code/60604_ordonnee_origine_aleatoire.sas)
-- [Atelier: décompte de glycoprotéines CD4](https://raw.githubusercontent.com/lbelzile/modstat/master/atelier/MATH60604A-atelier_cd4.pdf)
+- [Démontration de la procédure `mixed` (données `masseporc`)](https://raw.githubusercontent.com/lbelzile/modstat/main/files/code/60604_ordonnee_origine_aleatoire.sas)
+- [Atelier: décompte de glycoprotéines CD4](https://raw.githubusercontent.com/lbelzile/modstat/main/files/atelier/MATH60604A-atelier_cd4.pdf)
 

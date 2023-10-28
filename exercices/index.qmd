@@ -6,6 +6,7 @@ title: "Exercices"
 
 ```{r, echo=FALSE, eval=TRUE, message=FALSE}
 source("../files/get_exercise_data.R")
+row.names(exdat) <- 1:7
 knitr::kable(exdat, row.names = TRUE, align = "lcccc")
 ```
 

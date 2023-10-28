@@ -54,7 +54,7 @@ names <- c("Plan de cours",
            )
 ns <- length(index)
 url <- "https://lbelzile.github.io/MATH60604-diapos/"
-codedir <- "../code"
+codedir <- "../files/code"
 
 get_github_list <- function(user, repo, pattern){
   req <- httr::GET(paste0("https://api.github.com/repos/", user, "/", repo, "/git/trees/main?recursive=1"))

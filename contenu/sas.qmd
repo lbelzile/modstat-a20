@@ -17,8 +17,8 @@ Après avoir créé un compte utilisateur, suivez ces étapes:
 Si vous accédez à **SAS** onDemand, vous pouvez créer la bibliothèque contenant toutes les données utilisées en classe en mode lecture seule automatiquement en ajoutant la ligne suivante au fichier `autoexec`: `LIBNAME modstat "~/my_shared_file_links/u41148888/modstat" access=readonly;`
 
 
-![Localisation du fichier `autoexec`](../files/images/SASonDemand_autoexec.png)
-![Modifications du fichier `autoexec`](../files/images/SASonDemand_autoexec_2.png)
+![Localisation du fichier `autoexec`](../files/img/SASonDemand_autoexec.png)
+![Modifications du fichier `autoexec`](../files/img/SASonDemand_autoexec_2.png)
 
 
 
@@ -29,15 +29,15 @@ Si vous accédez à **SAS** onDemand, vous pouvez créer la bibliothèque conten
 
 Répétez les instructions précédentes, cette fois en ajoutant la bibliothèque suivante:
 
-```{sas loadintro, eval = FALSE}
+```{r loadintro, eval = FALSE}
 LIBNAME multi "~/my_shared_file_links/u41148888/multi" access=readonly;
 ```
 Vous pouvez également télécharger les données ([fichier `.zip`](https://raw.githubusercontent.com/lbelzile/modstat/main/files/introSAS/Intro_SAS_data.zip)) et créer votre propre bibliothèque. Pour ce faire, créez un dossier contenant les bases de données (extension `.sas7bdat`) et utilisez les commandes suivantes: 
 
-![Création d'une nouvelle bibliothèque](../files/images/SASonDemand_nouvelle_biblio.png)
+![Création d'une nouvelle bibliothèque](../files/img/SASonDemand_nouvelle_biblio.png)
 
 
-![Sélection du répertoire](../files/images/SASonDemand_nouvelle_biblio_2.png)
+![Sélection du répertoire](../files/img/SASonDemand_nouvelle_biblio_2.png)
 
 
 ## Contenu

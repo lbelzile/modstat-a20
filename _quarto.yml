@@ -31,7 +31,7 @@ website:
       - text: "Exercices"
         file: exercices/index.qmd
       - text: "Notes"
-        href: "https://lbelzile.github.io/math60604a"
+        href: "https://lbelzile.github.io/math60604"
 
 
   sidebar:
@@ -51,31 +51,31 @@ website:
         - section: "Contenu"
           contents:
             - text: "Semaine 1"
-              file: contenu/01-content.qmd
+              file: contenu/01-contenu.qmd
             - text: "Semaine 2"
-              file: contenu/02-content.qmd
+              file: contenu/02-contenu.qmd
             - text: "Semaine 3"
-              file: contenu/03-content.qmd
+              file: contenu/03-contenu.qmd
             - text: "Semaine 4"
-              file: contenu/04-content.qmd
+              file: contenu/04-contenu.qmd
             - text: "Semaine 5"
-              file: contenu/05-content.qmd
+              file: contenu/05-contenu.qmd
             - text: "Semaine 6"
-              file: contenu/06-content.qmd
+              file: contenu/06-contenu.qmd
             - text: "Semaine 7"
-              file: contenu/07-content.qmd
+              file: contenu/07-contenu.qmd
             - text: "Semaine 8"
-              file: contenu/08-content.qmd
+              file: contenu/08-contenu.qmd
             - text: "Semaine 9"
-              file: contenu/09-content.qmd
+              file: contenu/09-contenu.qmd
             - text: "Semaine 10"
-              file: contenu/10-content.qmd
+              file: contenu/10-contenu.qmd
             - text: "Semaine 11"
-              file: contenu/11-content.qmd
+              file: contenu/11-contenu.qmd
             - text: "Semaine 12"
-              file: contenu/12-content.qmd
+              file: contenu/12-contenu.qmd
             - text: "Semaine 13"
-              file: contenu/13-content.qmd
+              file: contenu/13-contenu.qmd
     - title: "Évaluations"
       file: evaluations/index.qmd
     - title: "Exercices"

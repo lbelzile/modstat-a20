@@ -1,9 +1,9 @@
 ---
-title: "Statistical modelling"
+title: "Modélisation statistique"
 subtitle: |
-  The goal of this course is to provide basic notions of statistical analysis and inference as well as advanced statistical methods. In addition to the theoretical concepts, this course will focus on the practical applications of these methods.
+ Ce cours aborde notamment les modèles linéaires, les modèles linéaires généralisés et la régression pour données longitudinales avec effets aléatoires et structures de corrélation. Pour chacune de ces méthodes, les principes théoriques de l’inférence, tels que les tests d’hypothèse, statistiques de tests et méthodes d’estimation seront abordés avec rigueur. Une attention particulière sera aussi portée aux applications en gestion à l’aide du logiciel SAS.
 details: |
-  MATH 60604A, Fall 2020<br>HEC Montréal
+  MATH 60604, automne 2020<br>HEC Montréal
 sidebar: false
 toc: false
 page-layout: full
@@ -53,9 +53,6 @@ withr::with_dir(here::here(), {
 :::
 
 ## Descriptif du cours
-
-L’objectif est de fournir aux étudiants les bases de l’inférence statistique ainsi que les outils de modélisation dans un contexte de régression. Ce cours aborde notamment les modèles linéaires, les modèles linéaires généralisés et la régression pour données longitudinales avec effets aléatoires et structures de corrélation. Pour chacune de ces méthodes, les principes théoriques de l’inférence, tels que les tests d’hypothèse, statistiques de tests et méthodes d’estimation seront abordés avec rigueur. Une attention particulière sera aussi portée aux applications en gestion à l’aide du logiciel **SAS**.
-
 
 - Principes fondamentaux de modélisation et d'inférence statistique
 - Modèles linéaires
