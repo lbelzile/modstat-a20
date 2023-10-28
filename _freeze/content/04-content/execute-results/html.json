@@ -1,0 +1,16 @@
+{
+  "hash": "a8960c0523ac695c244ca0127ff66c45",
+  "result": {
+    "markdown": "---\ntitle: \"Interactions\"\n---\n\n\n\n\n### Content\n\n \n\n::: {.cell}\n::: {.cell-output-display}\n|S  |Content                      |                                    PDF                                     |                                Videos                                 |                                     SAS                                     |                                      R                                      |\n|:--|:----------------------------|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|\n|2e |Coefficient of determination |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w2e_r2.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/3rVrZDReDCk)|                                                                             |                                                                             |\n|2f |Predictions                  |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w2f_predictions.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/AubAJT6fSHs)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_2f_prediction.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_2f_prediction.R)|\n|2g |Interactions                 |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w2g_interactions.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/dtpJ3pn_GmQ)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_2g_interactions.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_2g_interactions.R)|\n:::\n:::\n\n- Course notes: chapter 2 (section 5-7)\n\n### In class:\n\n- Workshop on interactions (Exercise 2.8)\n\n## After class:\n\n- Tests of linear hypothesis in **SAS**: [theory](https://documentation.sas.com/?docsetId=statug&docsetTarget=statug_intromod_sect043.htm&docsetVersion=14.3&locale=en), [R code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-linear_hypothesis_tests.R), [**SAS** code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-interactions.sas)\n- Exercises 2.5-2.7\n\n",
+    "supporting": [
+      "04-content_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

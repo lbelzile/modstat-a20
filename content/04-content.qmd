@@ -1,0 +1,24 @@
+---
+title: "Interactions"
+---
+
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("2e","2f","2g")),-3], align = "llccccc", row.names = FALSE)
+```
+- Course notes: chapter 2 (section 5-7)
+
+### In class:
+
+- Workshop on interactions (Exercise 2.8)
+
+## After class:
+
+- Tests of linear hypothesis in **SAS**: [theory](https://documentation.sas.com/?docsetId=statug&docsetTarget=statug_intromod_sect043.htm&docsetVersion=14.3&locale=en), [R code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-linear_hypothesis_tests.R), [**SAS** code](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-interactions.sas)
+- Exercises 2.5-2.7
+

@@ -1,0 +1,16 @@
+---
+title: "Survival analysis"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("7a","7b","7c","7d","7e")),-3], align = "llccccc", row.names = FALSE)
+```
+
+## In class:
+
+- Exercise 7.1

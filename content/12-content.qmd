@@ -1,0 +1,21 @@
+---
+title: "Linear mixed models"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("6b","6c","6d")),-3], align = "llccccc", row.names = FALSE)
+```
+
+### In class:
+
+- Theoretical review of mixed models
+  - marginal versus conditional mean
+  - model equation
+  - REML versus ML (model comparison)
+- [Workshop: models for CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/main/files/workshop/MATH60604A-workshop_cd4counts.pdf)
+

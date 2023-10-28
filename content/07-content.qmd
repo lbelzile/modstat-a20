@@ -1,0 +1,19 @@
+---
+title: "Poisson regression"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("4d","4e","4f")),-3], align = "llccccc", row.names = FALSE)
+```
+- Course notes: Section 4.3 (excluding 4.3.3)
+
+
+### In class:
+
+- Review of Assignment 1
+- [Logistic regression with **SAS**](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_logistic.sas)

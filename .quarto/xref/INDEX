@@ -1,0 +1,65 @@
+{
+  "404.qmd": {
+    "404.html": "5cf1ae60"
+  },
+  "content/01-contenu.qmd": {
+    "01-contenu.html": "e978855c"
+  },
+  "content/index.qmd": {
+    "index.html": "2b4e6664"
+  },
+  "content/installation.qmd": {
+    "installation.html": "f7130e41"
+  },
+  "evaluations/index.qmd": {
+    "index.html": "cac1a312"
+  },
+  "exercises/index.qmd": {
+    "index.html": "fb9d3675"
+  },
+  "index.qmd": {
+    "index.html": "c6144466"
+  },
+  "content/01-content.qmd": {
+    "01-content.html": "d53c8829"
+  },
+  "content/02-content.qmd": {
+    "02-content.html": "cef0e636"
+  },
+  "content/03-content.qmd": {
+    "03-content.html": "dd1b86b2"
+  },
+  "content/04-content.qmd": {
+    "04-content.html": "19270427"
+  },
+  "content/05-content.qmd": {
+    "05-content.html": "56dd68c9"
+  },
+  "content/06-content.qmd": {
+    "06-content.html": "995f84f1"
+  },
+  "content/07-content.qmd": {
+    "07-content.html": "cb239c84"
+  },
+  "content/08-content.qmd": {
+    "08-content.html": "aed6a098"
+  },
+  "content/09-content.qmd": {
+    "09-content.html": "f44a6db9"
+  },
+  "content/10-content.qmd": {
+    "10-content.html": "2dced93b"
+  },
+  "content/11-content.qmd": {
+    "11-content.html": "94e6bebc"
+  },
+  "content/12-content.qmd": {
+    "12-content.html": "5f55093b"
+  },
+  "content/13-content.qmd": {
+    "13-content.html": "d36d5f4b"
+  },
+  "content/sas.qmd": {
+    "sas.html": "43117ade"
+  }
+}

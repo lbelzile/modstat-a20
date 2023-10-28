@@ -1,0 +1,16 @@
+{
+  "hash": "087e1d29244570b31bb9b64b2d793b7d",
+  "result": {
+    "markdown": "---\ntitle: \"Poisson regression\"\n---\n\n\n\n### Content\n\n \n\n::: {.cell}\n::: {.cell-output-display}\n|S  |Content            |                                    PDF                                     |                                Videos                                 |                                     SAS                                     |                                      R                                      |\n|:--|:------------------|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|\n|4d |Poisson regression |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w4d_Poisson.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/ErqXeY4nGgk)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4d_Poisson.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4d_Poisson.R)|\n|4e |Contingency tables |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w4e_contingencytab.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/1-F5vPk7_78)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4e_contingencytab.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4e_contingencytab.R)|\n|4f |Overdispersion     |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w4f_overdispersion.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/c5oQOIPBAeU)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4f_overdispersion.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4f_overdispersion.R)|\n:::\n:::\n\n- Course notes: Section 4.3 (excluding 4.3.3)\n\n\n### In class:\n\n- Review of Assignment 1\n- [Logistic regression with **SAS**](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_logistic.sas)\n",
+    "supporting": [
+      "07-content_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

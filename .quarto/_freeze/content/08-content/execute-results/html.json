@@ -1,0 +1,16 @@
+{
+  "hash": "0a7c79b605b723be531b573e1ac2cde1",
+  "result": {
+    "markdown": "---\ntitle: \"Rates and contingency tables\"\n---\n\n\n\n### Content\n\n \n\n::: {.cell}\n::: {.cell-output-display}\n|S  |Content                         |                                    PDF                                     |                                Videos                                 |                                     SAS                                     |                                      R                                      |\n|:--|:-------------------------------|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|\n|4g |Rates and offsets               |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w4g_offset.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/FLSAaWpHQso)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4g_offset.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4g_offset.R)|\n|4h |Logistic model for proportions  |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w4h_proportions.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/pqkjnA708c8)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4h_proportions.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_4h_proportions.R)|\n|5a |Introduction to correlated data |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w5a_intro.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/2LRzsxZPatQ)|                                                                             |                                                                             |\n:::\n:::\n\n\n### In class:\n\n- [Poisson/binomial analysis for `sweden`](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_Poisson.sas).\n- [Models for contingency tables (not covered)](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_contingencytable.sas)\n- Rates - Exercise 4.3 (children ever born)\n- Overdispersion - slides (see Exercise 4.4 for an example)\n",
+    "supporting": [
+      "08-content_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,7 @@
+Workshop: 25 minutes
+Using the assigned longitudinal database
+
+0) transform the data to long format (if necessary)
+1) construct an adequate mean model with time (cat/continuous) and explanatories
+2) fit an AR(1)/SP(POW), ARH(1) and UN models, provided these make sense
+3) test for simplification, starting with the most complicated model (UN -> ARH(1) -> AR(1) -> INDEP)

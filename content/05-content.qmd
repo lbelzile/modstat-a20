@@ -1,0 +1,19 @@
+---
+title: "Graphical diagnostics"
+---
+
+
+### Content
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("2h","2i")),], align = "llccccc", row.names = FALSE)
+```
+- Course notes: chapter 2 (sections 8 and 9)
+
+### In class:
+
+- Collinearity illustration with `wages85` data
+- Graphical analysis of residuals for `college` data [(code)](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-residualanalysis.sas)
+- [Workshop on diagnostic plots](https://lbelzile.github.io/MATH60604A-slides/graphicaldiagnostics.html)
+

@@ -1,0 +1,42 @@
+---
+title: "Introduction"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("0","1a","1b","1c")),], align = "llccccc", row.names = FALSE)
+```
+
+- Course notes: chapter 1 and Appendix A
+- Create an account on **SAS** onDemand 
+- Complete the [Introduction to **SAS**](content/sas.html)
+
+### In class:
+
+- Presentation and practice of pedagogical tools (Zoom / Wooclap / SAS onDemand)
+- [Graphics workshop (group)](https://github.com/lbelzile/statmod/raw/main/files/workshop/graphics.zip)
+
+### After class:
+
+- `intro` quiz (self-assessment)
+- Exercise 1.4 (a-b) with **SAS**. The whole exercise sheet may be somewhat difficult at this stage, but you should (be able to) complete it in the upcoming weeks.
+
+### Additional readings:
+
+- [Chapter 1 of *Data Visualization: A practical introduction* by Kieran Healy](https://socviz.co/lookatdata.html#lookatdata)
+- [Permutation tests](https://www.jwilber.me/permutationtest/)
+- [DataViz Cheatsheet](https://policyviz.com/2018/08/07/dataviz-cheatsheet/)
+- [Chapter 7 of _**R** for Data Science_ by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
+
+### Other references:
+
+- [Chapter 3 of _**R** for Data Science_ by Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/)
+- [*Fundamentals of Data Visualization* by Claus O. Wilke](https://clauswilke.com/dataviz/)
+- [Do's and don'ts of making effective graphics](https://stat545.com/effective-graphs.html)
+- [Financial Times Visual Vocabulary](https://github.com/ft-interactive/chart-doctor/tree/main/visual-vocabulary)
+- [BBC R Cookbook (optional)](https://bbc.github.io/rcookbook/)
+- [What's going on in this graph?](https://www.nytimes.com/2020/06/10/learning/over-60-new-york-times-graphs-for-students-to-analyze.html)

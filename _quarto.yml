@@ -1,0 +1,118 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!slides/"
+  resources:
+    - "files/"
+    - "slides/*.html"
+    - "slides/*.pdf"
+    - "slides/img/"
+    - "slides/figures/"
+    - "slides/libs/"
+    - "slides/css/"
+    - "slides/*_files/"
+    - "evaluations/*.pdf"
+
+
+# See https://quarto.org/docs/projects/code-execution.html#freeze
+execute:
+  freeze: auto  # Re-render only when source changes
+
+
+toc-title: "Table of content"
+website:
+  title: "Statistical modelling"
+  site-url: "https://lbelzile.github.io/statmod"
+  description: "The objective of this course is to provide students with the basics of statistical inference, as well as statistical tools for data modeling in a regression framework. The theory behind the statistical models will be reviewed with an emphasis on data applications in management."
+
+  navbar:
+    pinned: true
+    background: "#002855"
+    foreground: "#ffffff"
+    right:
+      - text: "Syllabus"
+        file: "/files/syllabus/MATH60604A-F20-Syllabus.pdf"
+      - text: "Content"
+        file: content/index.qmd
+      - text: "Evaluations"
+        file: evaluations/index.qmd
+      - text: "Exercises"
+        file: exercises/index.qmd
+      - text: "Notes"
+        href: "https://lbelzile.github.io/math60604a"
+      - icon: comment
+        href: "https://piazza.com/class/kcnzklt9pyj15y"
+        aria-label: Piazza
+
+
+  sidebar:
+    - title: "Content"
+      style: "docked"
+      search: false
+      foreground: "#002855"
+      contents:
+        - text: "Ressources"
+          file: content/index.qmd
+        - section: "Programming"
+          contents:
+            - text: "Introduction to **SAS**"
+              file: content/sas.qmd
+        - text: "Learning objectives"
+          file:  "/files/syllabus/MATH60604A_courseobjectives.pdf"
+        - section: "Pedagogical content"
+          contents:
+            - text: "Week 1"
+              file: content/01-content.qmd
+            - text: "Week 2"
+              file: content/02-content.qmd
+            - text: "Week 3"
+              file: content/03-content.qmd
+            - text: "Week 4"
+              file: content/04-content.qmd
+            - text: "Week 5"
+              file: content/05-content.qmd
+            - text: "Week 6"
+              file: content/06-content.qmd
+            - text: "Week 7"
+              file: content/07-content.qmd
+            - text: "Week 8"
+              file: content/08-content.qmd
+            - text: "Week 9"
+              file: content/09-content.qmd
+            - text: "Week 10"
+              file: content/10-content.qmd
+            - text: "Week 11"
+              file: content/11-content.qmd
+            - text: "Week 12"
+              file: content/12-content.qmd
+            - text: "Week 13"
+              file: content/13-content.qmd
+    - title: "Evaluations"
+      file: evaluations/index.qmd
+    - title: "Exercises"
+      file: exercises/index.qmd
+
+  page-footer:
+    left: |
+      Content {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}})<br>
+      Website template by [Dr. Andrew Heiss](https://www.andrewheiss.com/) under [MIT License](https://mit-license.org/)<br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub]({{< var course.github >}})
+
+preview:
+  port: 6200
+  browser: true
+  watch-inputs: true
+  navigate: true
+
+format:
+  html:
+    theme:
+      - litera
+      - html/custom.scss
+    toc: true

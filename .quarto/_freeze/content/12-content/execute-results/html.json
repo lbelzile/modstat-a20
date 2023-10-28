@@ -1,0 +1,16 @@
+{
+  "hash": "bebfc98d98f2fb1ced5f7f11016958c0",
+  "result": {
+    "markdown": "---\ntitle: \"Linear mixed models\"\n---\n\n\n\n### Content\n\n \n\n::: {.cell}\n::: {.cell-output-display}\n|S  |Content                |                                    PDF                                     |                                Videos                                 |                                     SAS                                     |                                      R                                      |\n|:--|:----------------------|:--------------------------------------------------------------------------:|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|\n|6b |Clustered data example |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w6b_clustereddata.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/4yXP8B9mYzQ)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_6b_clustereddata.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_6b_clustereddata.R)|\n|6c |Random effects         |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w6c_mixedmodels.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/HLYSs2lxFj8)|                                                                             |                                                                             |\n|6d |Random intercept       |[<span style='color: #4b5357;'><i class='fas fa-file-pdf fa-lg'></i></span>](https://lbelzile.github.io/MATH60604A-slides/MATH60604A_w6d_randomintercept.pdf)|[<span style='color: red;'><i class='fab fa-youtube fa-lg'></i></span>](https://youtu.be/oCuZajuIymk)|[<span style='color: #4b5357;'><i class='fas fa-file-code fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_6d_randomintercept.sas)|[<span style='color: #276dc2;'><i class='fab fa-r-project fa-lg'></i></span>](https://raw.githubusercontent.com/lbelzile/statmod/main/code/MATH60604A_6d_randomintercept.R)|\n:::\n:::\n\n\n### In class:\n\n- Theoretical review of mixed models\n  - marginal versus conditional mean\n  - model equation\n  - REML versus ML (model comparison)\n- [Workshop: models for CD4 counts](https://raw.githubusercontent.com/lbelzile/statmod/main/files/workshop/MATH60604A-workshop_cd4counts.pdf)\n\n",
+    "supporting": [
+      "12-content_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

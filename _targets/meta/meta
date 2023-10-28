@@ -1,0 +1,6 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|ad977ec423dbdfb8|||||||||||||||
+here_rel|function|db01910605ef2de6|||||||||||||||
+quarto_to_pdf|function|42e7249d46c75831|||||||||||||||
+render_xaringan|function|8315c72af1afea3d|||||||||||||||
+xaringan_to_pdf|function|7f39b549182c39b4|||||||||||||||

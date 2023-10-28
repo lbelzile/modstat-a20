@@ -1,0 +1,19 @@
+Pick one of the following datasets, depending on your team number
+
+1) pigweight
+2) beattheblues
+3) dental
+4) rats
+5) tolerance
+6) fev1
+7) renergie
+
+Answer the following question
+
+1) is the database in long format?
+2) identify the time variable
+3) are the number of time period the same for each individual
+4) are there missing values
+5) which variables are fixed in time? which vary
+6) create a spaghetti plot!
+

@@ -1,0 +1,19 @@
+---
+title: "Rates and contingency tables"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("4g","4h","5a")),-3], align = "llccccc", row.names = FALSE)
+```
+
+### In class:
+
+- [Poisson/binomial analysis for `sweden`](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_Poisson.sas).
+- [Models for contingency tables (not covered)](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_contingencytable.sas)
+- Rates - Exercise 4.3 (children ever born)
+- Overdispersion - slides (see Exercise 4.4 for an example)

@@ -1,0 +1,19 @@
+---
+title: "Longitudinal data"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("5b","5c","5d","5e","5f")),-3], align = "llccccc", row.names = FALSE)
+```
+
+### In class:
+
+- Discussion of features of longitudinal data: [example code from Rick Wicklin](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_longitudinal.sas)
+- [Workshop: examples of longitudinal data](https://raw.githubusercontent.com/lbelzile/statmod/main/files/workshop/60604A_longitudinal.txt) and [a description of datasets](https://raw.githubusercontent.com/lbelzile/statmod/main/files/workshop/longitudinal_dataset_description.txt)
+- [Transforming data from wide to long format](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A_transpose.sas)
+

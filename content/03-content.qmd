@@ -1,0 +1,25 @@
+---
+title: "Maximum likelihood and testing"
+---
+
+
+### Content
+
+ 
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("2d","3")),-3], align = "llccccc", row.names = FALSE)
+```
+- Course notes: chapter 3, chapter 2 (section 4)
+
+### In class:
+
+- [**R** demo](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-profile.R): sampling distribution of OLS, profile likelihood for individual coefficients
+- [Interpretation of **SAS** output and tests for the `insurance` data](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-tests_linear_models.sas)
+- [**Understanding Maximum Likelihood** by Kristoffer Magnusson](https://rpsychologist.com/d3/likelihood/)
+
+## After class
+
+- [Exercise sheet 2](https://raw.githubusercontent.com/lbelzile/statmod/main/files/exercises/MATH60604A-Exercise2.pdf)
+- [Tests as linear models](https://lindeloev.github.io/tests-as-linear/)
+

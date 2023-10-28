@@ -1,0 +1,178 @@
+********************************************************************************
+** fev1	  						                      **
+********************************************************************************
+
+Source:
+https://content.sph.harvard.edu/fitzmaur/ala2e/fev1.txt
+Description:
+
+The Six Cities Study of Air Pollution and Health was a
+longitudinal study designed to characterize lung growth as 
+measured by changes in pulmonary function in children and 
+adolescents, and the factors that influence lung function growth. 
+A cohort of 13,379 children born on or after 1967 was enrolled 
+in six communities across the U.S.: Watertown (Massachusetts), 
+Kingston and Harriman (Tennessee), a section of St. Louis (Missouri), 
+Steubenville (Ohio), Portage (Wisconsin), and Topeka (Kansas). 
+Most children were enrolled in the first or second 
+grade (between the ages of six and seven) and measurements of study
+participants were obtained annually until graduation from high
+school or loss to follow-up. At each annual examination,
+spirometry, the measurement of pulmonary function, was performed
+and a respiratory health questionnaire was completed by a parent
+or guardian.
+
+The dataset contains a subset of the pulmonary function data collected 
+in the Six Cities Study. The data consist of all measurements of FEV1, 
+height and age obtained from a randomly selected subset of the female
+participants living in Topeka, Kansas. The random sample consists
+of 300 girls, with a minimum of one and a maximum of twelve
+observations over time. 
+
+
+Variable List: 
+
+Subject ID, Height, Age, Initial Height, Initial Age, Log(FEV1).
+
+********************************************************************************
+** tolerance 						                      **
+********************************************************************************
+
+Tolerance of teenagers towards delinquency
+
+The data come from the American National Longitudinal Survey of
+Youth, which started in 1997. This longitudinal study follows a 
+sample of young Americans born between 1980 and 1984. A total of 
+8984 participants aged 12 to 17 were interviewed for the first time
+ in 1997 and the cohort has been followed up 15 times till now.
+
+We consider 16 individuals who responded to the first five interview 
+waves between age 11 to 15 years old, with annual follow-up. Of 
+particular interest are questions related to attitude towards 
+delinquency. Teens were asked to indicate their attitude towards
+ (a) cheating on an exam (b) purposely destroying someone’s goods 
+(c) smoking marijuana (d) stealing an object worth less than five 
+dollars (e) hitting or threatening someone without reason (f) drug
+ consumption (g) break in a building or a vehicle to steal (h) sell
+ hard drugs and (i) steal items worth more than $50. 
+Each score was recorded on a Likert scale of four ranging 
+from very bad (1) to completely acceptable (4). 
+
+Variables:
+• id : integer for identification of the participant.
+• age : age of the participant at follow-up.
+• tolerance : average score for the nine questions on tolerance towards delinquency.
+• sex : binary indicator, unity for men and zero for women.
+• exposure : average score of participant at age 11 to delinquent behaviour among
+ acquaintances, an estimate of the participation of friend(s) in each activity (a) to (i).
+
+********************************************************************************
+** rats			  						      **
+********************************************************************************
+
+Source: https://content.sph.harvard.edu/fitzmaur/ala2e/rat.txt
+
+Description:
+
+The data are from a study of weight gain, where investigators randomly assigned
+30 rats to three treatment groups: treatment 1 was a control (no additive); 
+treatments 2 and 3 consisted of two different additives (thiouracil and thyroxin
+respectively) to the rats drinking water. Weight was measured at
+baseline (week 0) and at weeks 1, 2, 3, and 4.
+Note: Due to an accident at the beginning of the study, data on 3 rats from the
+thyroxin group are unavailable.
+
+Variable List:
+
+ID, Treatment (1=Control, 2=Thiouracil, 3=Thyroxin), 
+Baseline Weight (Week 0), Weight at Week 1, Weight at Week 2, 
+Weight at Week 3, Weight at Week 4. 
+
+********************************************************************************
+** tlc		  							      **
+********************************************************************************
+
+Source: https://content.sph.harvard.edu/fitzmaur/ala2e/tlc.txt
+
+Subsample (N=100) of data on Blood Lead Levels from the 
+Treatment of Lead Exposed Children (TLC) Trial.
+
+
+Source: Data courtesy of Dr. George G. Rhoads (Chair, TLC Steering Committee).
+
+Reference: Treatment of Lead-exposed Children (TLC) Trial Group. (2000).
+Safety and Efficacy of Succimer in Toddlers with Blood Lead Levels of 
+20-44 µg/dL.  Pediatric Research, 48, 593-599.
+
+
+Description: 
+
+The Treatment of Lead-Exposed Children (TLC) trial was a placebo-controlled, 
+randomized study of succimer (a chelating agent) in children with blood 
+lead levels of 20-44 micrograms/dL.
+These data consist of four repeated measurements of blood lead 
+levels obtained at baseline (or week 0), week 1, week 4, and 
+week 6 on 100 children who were randomly assigned to chelation treatment 
+with succimer or placebo.
+
+
+Variable List: 
+
+Each row of the data set contains the following 6 variables:
+
+ID, Treatment Group, Lead Level Week 0, Lead Level Week 1, 
+Lead Level Week 4, Lead Level Week 6. 
+
+********************************************************************************
+** beattheblues		  						      **
+********************************************************************************
+Description:
+Longitudinal data from a clinical trial of an interactive, multimedia program
+ known as "Beat the Blues" designed to deliver cognitive behavioural therapy
+ to depressed patients via a computer terminal. Patients with depression 
+recruited in primary care were randomised to either the Beating the Blues
+ program, or to "Treatment as Usual (TAU)".
+
+Source: 
+J. Proudfoot, D. Goldberg and A. Mann (2003). Computerised, interactive, multimedia
+ 	CBT reduced anxiety and depression in general practice: A RCT. 
+	Psychological Medicine, 33, 217–227.
+
+Variables:
+• drug : did the patient take anti-depressant drugs (yes/no).
+• length : the length of the current episode of depression, either 'short' 
+	(less than six months) or 'long' (more than six months).
+• treatment : categorical variable with levels TAU (treatment as usual)
+	 and BtheB (Beat the Blues)
+• bdi.. : Beck Depression Inventory II at start of treatment, 
+	 with two months follow-up periods
+
+********************************************************************************
+** pigweight		  						      **
+********************************************************************************
+
+Source: Diggle, P.J., Heagerty, P., Liang, K.-Y. and Zeger, S.L. (2002). 
+	Analysis of Longitudinal Data, Second Edition, Oxord: Oxford University Press.
+
+Data provided by Dr Philip McCloud (Monash) on the weights (in kg) of 
+	48 pigs measured in nine consecutive weeks.
+
+********************************************************************************
+** dental		  						      **
+********************************************************************************
+
+Change in an orthodontic measurement over time for several young subjects.
+
+• distance : a numeric vector of distances from the pituitary to the 
+  pterygomaxillary fissure (mm). These distances are measured on x-ray
+  images of the skull.
+
+age: ages of the subject (yr).
+gender: gender of subject, either male/female
+
+Details
+Investigators at the University of North Carolina Dental School followed the 
+growth of 27 children (16 males, 11 females) from age 8 until age 14. Every 
+two years they measured the distance between the pituitary and the pterygomaxillary
+ fissure, two points that are easily identified on x-ray exposures of the side of the head.
+

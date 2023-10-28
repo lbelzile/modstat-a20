@@ -1,0 +1,24 @@
+author: Léo Belzile
+
+instructor:
+  name: Dr. Léo Belzile
+  name_no_title: Léo Belzile
+  email: leo.belzile@hec.ca
+  url: "https://www.lbelzile.bitbucket.io"
+  github: lbelzile
+  office: "Zoom"
+  contact_policy: >
+    I am best reached by email
+course:
+  number: "MATH 60604A"
+  semester: "Fall 2020"
+  days: "Wednesday"
+  time: "15:30–18:30"
+  location: "Zoom"
+  github: "https://www.github.com/lbelzile/statmod"
+  copyright_year: "2020"
+
+university:
+  name: "HEC Montréal"
+  url: "https://www.hec.ca"
+

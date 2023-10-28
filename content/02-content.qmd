@@ -1,0 +1,21 @@
+---
+title: "Linear regression"
+---
+
+
+### Content
+
+Recording 2c is optional.
+```{r, echo = FALSE}
+source("../files/get_slide_data.R")
+knitr::kable(sldat[which(sldat$S %in% c("2a","2b","2c")),], align = "llccccc", row.names = FALSE)
+```
+- Course notes: chapter 2 (sections 1-3)
+
+### In class
+
+- Parameter interpretation (`intention` data, full model)
+- Exploratory data analysis of the `insurance` data and construction of a linear model
+- [Code to create added-variable plots](https://raw.githubusercontent.com/lbelzile/statmod/main/files/code/60604A-added-variable_plots.sas)
+- xkcd comic strip: [Curve-fitting](https://xkcd.com/2048/)
+
