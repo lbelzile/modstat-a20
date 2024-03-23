@@ -19,7 +19,7 @@ Chaque étudiant(e) est responsable de son apprentissage.
 
 ## Prérequis
 
-Ce cours couvre beaucoup de matériel (c'est davantage un survol qu'un traitement en profondeur de la matière). Cela dit, les étudiant(e)s inscrit(e)s devraient avoir une formation de base préalable en statistique au niveau du livre [_Introductory Statistics with Randomization and Simulation_](https://www.openintro.org/book/isrs/) (Chapitres 1-4, en excluant les sujets spéciaux). Une certaine familiarité avec le calcul différentiel et intégral et l'algèbre linéaire est supposée. 
+Ce cours couvre beaucoup de matériel (c'est davantage un survol qu'un traitement en profondeur de la matière). Cela dit, les étudiant(e)s inscrit(e)s devraient avoir une formation de base préalable en statistique au niveau du livre [_Introductory Statistics with Randomization and Simulation_](https://www.openintro.org/book/isrs/) (Chapitres 1--4, en excluant les sujets spéciaux). Une certaine familiarité avec le calcul différentiel et intégral et l'algèbre linéaire est supposée. 
 
 ## Public cible
 
